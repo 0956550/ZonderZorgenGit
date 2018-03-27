@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ZonderZorgenGit.Controller
 {
-    class ConnectionController
+    public class ConnectionController
     {
         private MySqlConnection connection;
         private bool connectionStatus = false;
