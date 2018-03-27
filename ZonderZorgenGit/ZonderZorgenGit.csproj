@@ -51,12 +51,21 @@
   <ItemGroup>
     <Compile Include="Controller\DashboardController.cs" />
     <Compile Include="Controller\ConnectionController.cs" />
+    <Compile Include="Controller\OrgaandonorenController.cs" />
+    <Compile Include="Controller\WerkgelegenheidController.cs" />
+    <Compile Include="Controller\ZorgkostenController.cs" />
     <Compile Include="LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginView.Designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BevolkingKerncijfersModel.cs" />
+    <Compile Include="Model\DonorregistratiesPersoonskenmerkenModel.cs" />
+    <Compile Include="Model\WelvaartPersonenKerncijfersModel.cs" />
+    <Compile Include="Model\ZorggebruikModel.cs" />
+    <Compile Include="Model\ZorguitgavenModel.cs" />
+    <Compile Include="Model\ZorgWerkgelegenheidModel.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\DashboardView.cs">
@@ -64,6 +73,24 @@
     </Compile>
     <Compile Include="View\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OrgaandonorenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OrgaandonorenView.Designer.cs">
+      <DependentUpon>OrgaandonorenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WerkgelegenheidView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WerkgelegenheidView.Designer.cs">
+      <DependentUpon>WerkgelegenheidView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZorgkostenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ZorgkostenView.Designer.cs">
+      <DependentUpon>ZorgkostenView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
@@ -80,6 +107,15 @@
     <EmbeddedResource Include="View\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\OrgaandonorenView.resx">
+      <DependentUpon>OrgaandonorenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WerkgelegenheidView.resx">
+      <DependentUpon>WerkgelegenheidView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ZorgkostenView.resx">
+      <DependentUpon>ZorgkostenView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,9 +129,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Images\zonderzorgen.jpg" />
   </ItemGroup>

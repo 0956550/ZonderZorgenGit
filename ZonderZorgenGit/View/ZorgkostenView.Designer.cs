@@ -1,6 +1,6 @@
 ﻿namespace ZonderZorgenGit.View
 {
-    partial class DashboardView
+    partial class ZorgkostenView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardView));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZorgkostenView));
             this.LogoImg = new System.Windows.Forms.PictureBox();
             this.DoctorImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).BeginInit();
@@ -37,8 +37,6 @@
             // 
             // LogoImg
             // 
-            this.LogoImg.BackColor = System.Drawing.Color.Transparent;
-            this.LogoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.LogoImg.Image = ((System.Drawing.Image)(resources.GetObject("LogoImg.Image")));
             this.LogoImg.Location = new System.Drawing.Point(1002, 12);
             this.LogoImg.Name = "LogoImg";
@@ -57,7 +55,7 @@
             this.DoctorImg.TabIndex = 1;
             this.DoctorImg.TabStop = false;
             // 
-            // DashboardView
+            // ZorgkostenView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -65,9 +63,8 @@
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.DoctorImg);
             this.Controls.Add(this.LogoImg);
-            this.Name = "DashboardView";
+            this.Name = "ZorgkostenView";
             this.Text = "ZonderZorgen";
-            this.Load += new System.EventHandler(this.DashboardView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorImg)).EndInit();
             this.ResumeLayout(false);
