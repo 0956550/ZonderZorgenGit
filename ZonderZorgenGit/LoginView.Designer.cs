@@ -132,6 +132,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(149, 26);
             this.textBox2.TabIndex = 8;
+            this.textBox2.Text = "zonder_zorgen";
             // 
             // textBox3
             // 
