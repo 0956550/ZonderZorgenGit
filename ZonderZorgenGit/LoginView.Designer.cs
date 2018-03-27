@@ -37,10 +37,12 @@
             this.UserIdLbl = new System.Windows.Forms.Label();
             this.PortLbl = new System.Windows.Forms.Label();
             this.ServerIpTxtBx = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.DatabaseTxtBx = new System.Windows.Forms.TextBox();
+            this.UserIdTxtBx = new System.Windows.Forms.TextBox();
+            this.PasswordTxtBx = new System.Windows.Forms.TextBox();
+            this.PortTxtBx = new System.Windows.Forms.TextBox();
+            this.ConnectBtn = new System.Windows.Forms.Button();
+            this.DisconnectBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,10 +51,9 @@
             this.LogoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.LogoImg.Cursor = System.Windows.Forms.Cursors.No;
             this.LogoImg.Image = ((System.Drawing.Image)(resources.GetObject("LogoImg.Image")));
-            this.LogoImg.Location = new System.Drawing.Point(442, 23);
-            this.LogoImg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.LogoImg.Location = new System.Drawing.Point(221, 12);
             this.LogoImg.Name = "LogoImg";
-            this.LogoImg.Size = new System.Drawing.Size(500, 192);
+            this.LogoImg.Size = new System.Drawing.Size(250, 100);
             this.LogoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LogoImg.TabIndex = 0;
             this.LogoImg.TabStop = false;
@@ -61,10 +62,9 @@
             // 
             this.ConnectionStatusLbl.AutoSize = true;
             this.ConnectionStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ConnectionStatusLbl.Location = new System.Drawing.Point(24, 831);
-            this.ConnectionStatusLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.ConnectionStatusLbl.Location = new System.Drawing.Point(12, 432);
             this.ConnectionStatusLbl.Name = "ConnectionStatusLbl";
-            this.ConnectionStatusLbl.Size = new System.Drawing.Size(117, 37);
+            this.ConnectionStatusLbl.Size = new System.Drawing.Size(60, 20);
             this.ConnectionStatusLbl.TabIndex = 1;
             this.ConnectionStatusLbl.Text = "Status:";
             // 
@@ -72,10 +72,9 @@
             // 
             this.ServerIpLbl.AutoSize = true;
             this.ServerIpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ServerIpLbl.Location = new System.Drawing.Point(24, 267);
-            this.ServerIpLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.ServerIpLbl.Location = new System.Drawing.Point(12, 135);
             this.ServerIpLbl.Name = "ServerIpLbl";
-            this.ServerIpLbl.Size = new System.Drawing.Size(156, 37);
+            this.ServerIpLbl.Size = new System.Drawing.Size(78, 20);
             this.ServerIpLbl.TabIndex = 2;
             this.ServerIpLbl.Text = "Server IP:";
             // 
@@ -83,21 +82,19 @@
             // 
             this.DatabaseLbl.AutoSize = true;
             this.DatabaseLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DatabaseLbl.Location = new System.Drawing.Point(24, 328);
-            this.DatabaseLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.DatabaseLbl.Location = new System.Drawing.Point(12, 167);
             this.DatabaseLbl.Name = "DatabaseLbl";
-            this.DatabaseLbl.Size = new System.Drawing.Size(166, 37);
+            this.DatabaseLbl.Size = new System.Drawing.Size(83, 20);
             this.DatabaseLbl.TabIndex = 3;
-            this.DatabaseLbl.Text = "DataBase:";
+            this.DatabaseLbl.Text = "Database:";
             // 
             // PasswordLbl
             // 
             this.PasswordLbl.AutoSize = true;
             this.PasswordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PasswordLbl.Location = new System.Drawing.Point(24, 452);
-            this.PasswordLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.PasswordLbl.Location = new System.Drawing.Point(12, 231);
             this.PasswordLbl.Name = "PasswordLbl";
-            this.PasswordLbl.Size = new System.Drawing.Size(167, 37);
+            this.PasswordLbl.Size = new System.Drawing.Size(82, 20);
             this.PasswordLbl.TabIndex = 4;
             this.PasswordLbl.Text = "Password:";
             // 
@@ -105,10 +102,9 @@
             // 
             this.UserIdLbl.AutoSize = true;
             this.UserIdLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UserIdLbl.Location = new System.Drawing.Point(24, 391);
-            this.UserIdLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UserIdLbl.Location = new System.Drawing.Point(12, 199);
             this.UserIdLbl.Name = "UserIdLbl";
-            this.UserIdLbl.Size = new System.Drawing.Size(133, 37);
+            this.UserIdLbl.Size = new System.Drawing.Size(68, 20);
             this.UserIdLbl.TabIndex = 5;
             this.UserIdLbl.Text = "User ID:";
             // 
@@ -116,72 +112,91 @@
             // 
             this.PortLbl.AutoSize = true;
             this.PortLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PortLbl.Location = new System.Drawing.Point(24, 514);
-            this.PortLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.PortLbl.Location = new System.Drawing.Point(12, 263);
             this.PortLbl.Name = "PortLbl";
-            this.PortLbl.Size = new System.Drawing.Size(85, 37);
+            this.PortLbl.Size = new System.Drawing.Size(42, 20);
             this.PortLbl.TabIndex = 6;
             this.PortLbl.Text = "Port:";
             // 
             // ServerIpTxtBx
             // 
             this.ServerIpTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ServerIpTxtBx.Location = new System.Drawing.Point(244, 261);
-            this.ServerIpTxtBx.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ServerIpTxtBx.Location = new System.Drawing.Point(122, 132);
             this.ServerIpTxtBx.Name = "ServerIpTxtBx";
-            this.ServerIpTxtBx.Size = new System.Drawing.Size(294, 44);
+            this.ServerIpTxtBx.Size = new System.Drawing.Size(149, 26);
             this.ServerIpTxtBx.TabIndex = 7;
             this.ServerIpTxtBx.Text = "127.0.0.1";
             // 
-            // textBox2
+            // DatabaseTxtBx
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(244, 323);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 44);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.Text = "zonder_zorgen";
+            this.DatabaseTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DatabaseTxtBx.Location = new System.Drawing.Point(122, 164);
+            this.DatabaseTxtBx.Name = "DatabaseTxtBx";
+            this.DatabaseTxtBx.Size = new System.Drawing.Size(149, 26);
+            this.DatabaseTxtBx.TabIndex = 8;
+            this.DatabaseTxtBx.Text = "zonder_zorgen";
             // 
-            // textBox3
+            // UserIdTxtBx
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox3.Location = new System.Drawing.Point(244, 384);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(294, 44);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.Text = "ZonderZorgen";
+            this.UserIdTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UserIdTxtBx.Location = new System.Drawing.Point(122, 196);
+            this.UserIdTxtBx.Name = "UserIdTxtBx";
+            this.UserIdTxtBx.Size = new System.Drawing.Size(149, 26);
+            this.UserIdTxtBx.TabIndex = 9;
+            this.UserIdTxtBx.Text = "ZonderZorgen";
             // 
-            // textBox4
+            // PasswordTxtBx
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox4.Location = new System.Drawing.Point(244, 447);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(294, 44);
-            this.textBox4.TabIndex = 10;
+            this.PasswordTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PasswordTxtBx.Location = new System.Drawing.Point(122, 228);
+            this.PasswordTxtBx.Name = "PasswordTxtBx";
+            this.PasswordTxtBx.PasswordChar = '*';
+            this.PasswordTxtBx.Size = new System.Drawing.Size(149, 26);
+            this.PasswordTxtBx.TabIndex = 10;
             // 
-            // textBox5
+            // PortTxtBx
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox5.Location = new System.Drawing.Point(244, 508);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(294, 44);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "3306";
+            this.PortTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PortTxtBx.Location = new System.Drawing.Point(122, 260);
+            this.PortTxtBx.Name = "PortTxtBx";
+            this.PortTxtBx.Size = new System.Drawing.Size(149, 26);
+            this.PortTxtBx.TabIndex = 11;
+            this.PortTxtBx.Text = "3306";
+            // 
+            // ConnectBtn
+            // 
+            this.ConnectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ConnectBtn.Location = new System.Drawing.Point(16, 343);
+            this.ConnectBtn.Name = "ConnectBtn";
+            this.ConnectBtn.Size = new System.Drawing.Size(111, 34);
+            this.ConnectBtn.TabIndex = 12;
+            this.ConnectBtn.Text = "Connect";
+            this.ConnectBtn.UseVisualStyleBackColor = true;
+            this.ConnectBtn.Click += new System.EventHandler(this.ConnectBtn_Click);
+            // 
+            // DisconnectBtn
+            // 
+            this.DisconnectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DisconnectBtn.Location = new System.Drawing.Point(133, 343);
+            this.DisconnectBtn.Name = "DisconnectBtn";
+            this.DisconnectBtn.Size = new System.Drawing.Size(111, 34);
+            this.DisconnectBtn.TabIndex = 13;
+            this.DisconnectBtn.Text = "Disconnect";
+            this.DisconnectBtn.UseVisualStyleBackColor = true;
+            this.DisconnectBtn.Click += new System.EventHandler(this.DisconnectBtn_Click);
             // 
             // LoginView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(968, 886);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.DisconnectBtn);
+            this.Controls.Add(this.ConnectBtn);
+            this.Controls.Add(this.PortTxtBx);
+            this.Controls.Add(this.PasswordTxtBx);
+            this.Controls.Add(this.UserIdTxtBx);
+            this.Controls.Add(this.DatabaseTxtBx);
             this.Controls.Add(this.ServerIpTxtBx);
             this.Controls.Add(this.PortLbl);
             this.Controls.Add(this.UserIdLbl);
@@ -190,7 +205,6 @@
             this.Controls.Add(this.ServerIpLbl);
             this.Controls.Add(this.ConnectionStatusLbl);
             this.Controls.Add(this.LogoImg);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "LoginView";
             this.Text = "ZonderZorgen";
             ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).EndInit();
@@ -209,10 +223,12 @@
         private System.Windows.Forms.Label UserIdLbl;
         private System.Windows.Forms.Label PortLbl;
         private System.Windows.Forms.TextBox ServerIpTxtBx;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox DatabaseTxtBx;
+        private System.Windows.Forms.TextBox UserIdTxtBx;
+        private System.Windows.Forms.TextBox PasswordTxtBx;
+        private System.Windows.Forms.TextBox PortTxtBx;
+        private System.Windows.Forms.Button ConnectBtn;
+        private System.Windows.Forms.Button DisconnectBtn;
     }
 }
 
