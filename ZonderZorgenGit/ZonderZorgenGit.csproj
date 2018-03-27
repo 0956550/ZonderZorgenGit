@@ -84,5 +84,8 @@
     <Folder Include="Model\" />
     <Folder Include="View\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\zonderzorgen.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
