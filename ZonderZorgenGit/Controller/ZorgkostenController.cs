@@ -7,16 +7,17 @@ using ZonderZorgenGit.View;
 
 namespace ZonderZorgenGit.Controller
 {
-    class ZorgkostenController
+    public class ZorgkostenController
     {
         private ConnectionController mainConnection;
-        private ZorgkostenView zorgkostenView = new ZorgkostenView();
+        private ZorgkostenView zorgkostenView;
         private DashboardView dashboardView;
 
         public ZorgkostenController(ConnectionController connectionControllerP, DashboardView dashboardViewP)
         {
             this.mainConnection = connectionControllerP;
             this.dashboardView = dashboardViewP;
+            this.zorgkostenView = new ZorgkostenView(this);
             Initialize();
         }
 
@@ -24,6 +25,10 @@ namespace ZonderZorgenGit.Controller
         {
             this.zorgkostenView.Show();
             this.dashboardView.Close();
+        }
+        public DashboardView GetDashboardView()
+        {
+            return this.dashboardView;
         }
     }
 }

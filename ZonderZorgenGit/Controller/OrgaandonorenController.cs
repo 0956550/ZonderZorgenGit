@@ -7,17 +7,18 @@ using ZonderZorgenGit.View;
 
 namespace ZonderZorgenGit.Controller
 {
-    class OrgaandonorenController
+    public class OrgaandonorenController
     {
 
         private ConnectionController mainConnection;
-        private OrgaandonorenView orgaandonorenView = new OrgaandonorenView();
+        private OrgaandonorenView orgaandonorenView;
         private DashboardView dashboardView;
 
         public OrgaandonorenController(ConnectionController connectionControllerP, DashboardView dashboardViewP)
         {
             mainConnection = connectionControllerP;
             dashboardView = dashboardViewP;
+            orgaandonorenView = new OrgaandonorenView(this);
             this.Initialize();
         }
 
@@ -26,6 +27,5 @@ namespace ZonderZorgenGit.Controller
             this.orgaandonorenView.Show();
             this.dashboardView.Close();
         }
-
     }
 }

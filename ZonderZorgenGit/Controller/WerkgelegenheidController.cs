@@ -7,17 +7,18 @@ using ZonderZorgenGit.View;
 
 namespace ZonderZorgenGit.Controller
 {
-    class WerkgelegenheidController
+    public class WerkgelegenheidController
     {
 
         private ConnectionController mainConnection;
-        private WerkgelegenheidView werkgelegenheidView = new WerkgelegenheidView();
+        private WerkgelegenheidView werkgelegenheidView;
         private DashboardView dashboardView;
 
         public WerkgelegenheidController(ConnectionController connectionControllerP, DashboardView dashboardViewP)
         {
             this.mainConnection = connectionControllerP;
             this.dashboardView = dashboardViewP;
+            werkgelegenheidView = new WerkgelegenheidView(this);
             this.Initialize();
         }
 

@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZonderZorgenGit.Controller;
 
 namespace ZonderZorgenGit.View
 {
     public partial class OrgaandonorenView : Form
     {
-        public OrgaandonorenView()
+        private OrgaandonorenController orgaandonorenController;
+
+        public OrgaandonorenView(OrgaandonorenController orgaandonorenControllerP)
         {
+            this.orgaandonorenController = orgaandonorenControllerP;
             InitializeComponent();
+        }
+
+        private void DashboardBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

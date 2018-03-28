@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZonderZorgenGit.Controller;
 
 namespace ZonderZorgenGit.View
 {
     public partial class ZorgkostenView : Form
     {
-        public ZorgkostenView()
+        private ZorgkostenController zorgkostenController;
+
+        public ZorgkostenView(ZorgkostenController zorgkostenControllerP)
         {
+            this.zorgkostenController = zorgkostenControllerP;
             InitializeComponent();
+        }
+
+        private void DashboardBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

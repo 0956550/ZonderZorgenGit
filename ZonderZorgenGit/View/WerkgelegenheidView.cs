@@ -7,17 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZonderZorgenGit.Controller;
 
 namespace ZonderZorgenGit.View
 {
     public partial class WerkgelegenheidView : Form
     {
-        public WerkgelegenheidView()
+        private WerkgelegenheidController werkgelegenheidController;
+
+        public WerkgelegenheidView(WerkgelegenheidController werkgelegenheidControllerP)
         {
+            this.werkgelegenheidController = werkgelegenheidControllerP;
             InitializeComponent();
         }
 
-        private void MainPnl_Paint(object sender, PaintEventArgs e)
+        private void DashboardBtn_Click(object sender, EventArgs e)
         {
 
         }

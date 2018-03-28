@@ -20,7 +20,7 @@ namespace ZonderZorgenGit.Controller
             dashboardView = new DashboardView(this);
             Initialize();
         }
-        private void Initialize()
+        public void Initialize()
         {
             dashboardView.Show();
         }

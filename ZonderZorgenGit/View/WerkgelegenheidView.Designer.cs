@@ -71,6 +71,7 @@
             this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
             this.DashboardBtn.TabIndex = 9;
             this.DashboardBtn.UseVisualStyleBackColor = true;
+            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
             // 
             // OverBtn
             // 
@@ -91,7 +92,6 @@
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
-            this.MainPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPnl_Paint);
             // 
             // WerkgelegenheidView
             // 
