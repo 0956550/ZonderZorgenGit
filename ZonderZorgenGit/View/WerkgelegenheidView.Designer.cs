@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WerkgelegenheidView));
             this.SidePnl = new System.Windows.Forms.Panel();
-            this.MainPnl = new System.Windows.Forms.Panel();
             this.DatasetsBtn = new System.Windows.Forms.Button();
-            this.OverBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
+            this.OverBtn = new System.Windows.Forms.Button();
+            this.MainPnl = new System.Windows.Forms.Panel();
             this.SidePnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,14 +48,6 @@
             this.SidePnl.Size = new System.Drawing.Size(265, 735);
             this.SidePnl.TabIndex = 0;
             // 
-            // MainPnl
-            // 
-            this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
-            this.MainPnl.Location = new System.Drawing.Point(271, 12);
-            this.MainPnl.Name = "MainPnl";
-            this.MainPnl.Size = new System.Drawing.Size(980, 705);
-            this.MainPnl.TabIndex = 1;
-            // 
             // DatasetsBtn
             // 
             this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
@@ -67,6 +59,18 @@
             this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.TabIndex = 8;
             this.DatasetsBtn.UseVisualStyleBackColor = true;
+            // 
+            // DashboardBtn
+            // 
+            this.DashboardBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.BackgroundImage")));
+            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DashboardBtn.FlatAppearance.BorderSize = 2;
+            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DashboardBtn.Location = new System.Drawing.Point(57, 186);
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
+            this.DashboardBtn.TabIndex = 9;
+            this.DashboardBtn.UseVisualStyleBackColor = true;
             // 
             // OverBtn
             // 
@@ -80,17 +84,14 @@
             this.OverBtn.TabIndex = 7;
             this.OverBtn.UseVisualStyleBackColor = true;
             // 
-            // DashboardBtn
+            // MainPnl
             // 
-            this.DashboardBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.BackgroundImage")));
-            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.DashboardBtn.FlatAppearance.BorderSize = 2;
-            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DashboardBtn.Location = new System.Drawing.Point(57, 186);
-            this.DashboardBtn.Name = "DashboardBtn";
-            this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
-            this.DashboardBtn.TabIndex = 9;
-            this.DashboardBtn.UseVisualStyleBackColor = true;
+            this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
+            this.MainPnl.Location = new System.Drawing.Point(271, 12);
+            this.MainPnl.Name = "MainPnl";
+            this.MainPnl.Size = new System.Drawing.Size(980, 705);
+            this.MainPnl.TabIndex = 1;
+            this.MainPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPnl_Paint);
             // 
             // WerkgelegenheidView
             // 

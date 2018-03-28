@@ -13,12 +13,27 @@ namespace ZonderZorgenGit.View
 {
     public partial class DashboardView : Form
     {
-        DashboardController dashboardController;
+        private DashboardController dashboardController;
 
         public DashboardView(DashboardController dashboardControllerP)
         {
             InitializeComponent();
             dashboardController = dashboardControllerP;
+        }
+
+        private void OrgaandonorenBtn_Click(object sender, EventArgs e)
+        {
+            OrgaandonorenController orgaandonorenController = new OrgaandonorenController(dashboardController.GetConnection(), this);
+        }
+
+        private void WerkgelegenheidBtn_Click(object sender, EventArgs e)
+        {
+            WerkgelegenheidController werkgelegenheidController = new WerkgelegenheidController(this.dashboardController.GetConnection(), this);
+        }
+
+        private void ZorgkostenBtn_Click(object sender, EventArgs e)
+        {
+            ZorgkostenController zorgkostenController = new ZorgkostenController(this.dashboardController.GetConnection(), this);
         }
     }
 }

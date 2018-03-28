@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardView));
             this.SidePnl = new System.Windows.Forms.Panel();
+            this.DatasetsBtn = new System.Windows.Forms.Button();
+            this.OverBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.MainPnl = new System.Windows.Forms.Panel();
             this.ZorgkostenLbl = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.ZorgkostenBtn = new System.Windows.Forms.Button();
             this.WerkgelegenheidBtn = new System.Windows.Forms.Button();
             this.OrgaandonorenBtn = new System.Windows.Forms.Button();
-            this.OverBtn = new System.Windows.Forms.Button();
-            this.DatasetsBtn = new System.Windows.Forms.Button();
             this.SidePnl.SuspendLayout();
             this.MainPnl.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,30 @@
             this.SidePnl.Name = "SidePnl";
             this.SidePnl.Size = new System.Drawing.Size(265, 735);
             this.SidePnl.TabIndex = 0;
+            // 
+            // DatasetsBtn
+            // 
+            this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
+            this.DatasetsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DatasetsBtn.FlatAppearance.BorderSize = 2;
+            this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DatasetsBtn.Location = new System.Drawing.Point(54, 296);
+            this.DatasetsBtn.Name = "DatasetsBtn";
+            this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
+            this.DatasetsBtn.TabIndex = 6;
+            this.DatasetsBtn.UseVisualStyleBackColor = true;
+            // 
+            // OverBtn
+            // 
+            this.OverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OverBtn.BackgroundImage")));
+            this.OverBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.OverBtn.FlatAppearance.BorderSize = 2;
+            this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OverBtn.Location = new System.Drawing.Point(54, 240);
+            this.OverBtn.Name = "OverBtn";
+            this.OverBtn.Size = new System.Drawing.Size(150, 50);
+            this.OverBtn.TabIndex = 2;
+            this.OverBtn.UseVisualStyleBackColor = true;
             // 
             // DashboardBtn
             // 
@@ -123,6 +147,7 @@
             this.ZorgkostenBtn.Size = new System.Drawing.Size(200, 200);
             this.ZorgkostenBtn.TabIndex = 2;
             this.ZorgkostenBtn.UseVisualStyleBackColor = true;
+            this.ZorgkostenBtn.Click += new System.EventHandler(this.ZorgkostenBtn_Click);
             // 
             // WerkgelegenheidBtn
             // 
@@ -135,6 +160,7 @@
             this.WerkgelegenheidBtn.Size = new System.Drawing.Size(200, 200);
             this.WerkgelegenheidBtn.TabIndex = 1;
             this.WerkgelegenheidBtn.UseVisualStyleBackColor = true;
+            this.WerkgelegenheidBtn.Click += new System.EventHandler(this.WerkgelegenheidBtn_Click);
             // 
             // OrgaandonorenBtn
             // 
@@ -147,30 +173,7 @@
             this.OrgaandonorenBtn.Size = new System.Drawing.Size(200, 200);
             this.OrgaandonorenBtn.TabIndex = 0;
             this.OrgaandonorenBtn.UseVisualStyleBackColor = true;
-            // 
-            // OverBtn
-            // 
-            this.OverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OverBtn.BackgroundImage")));
-            this.OverBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.OverBtn.FlatAppearance.BorderSize = 2;
-            this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OverBtn.Location = new System.Drawing.Point(54, 240);
-            this.OverBtn.Name = "OverBtn";
-            this.OverBtn.Size = new System.Drawing.Size(150, 50);
-            this.OverBtn.TabIndex = 2;
-            this.OverBtn.UseVisualStyleBackColor = true;
-            // 
-            // DatasetsBtn
-            // 
-            this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
-            this.DatasetsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.DatasetsBtn.FlatAppearance.BorderSize = 2;
-            this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DatasetsBtn.Location = new System.Drawing.Point(54, 296);
-            this.DatasetsBtn.Name = "DatasetsBtn";
-            this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
-            this.DatasetsBtn.TabIndex = 6;
-            this.DatasetsBtn.UseVisualStyleBackColor = true;
+            this.OrgaandonorenBtn.Click += new System.EventHandler(this.OrgaandonorenBtn_Click);
             // 
             // DashboardView
             // 

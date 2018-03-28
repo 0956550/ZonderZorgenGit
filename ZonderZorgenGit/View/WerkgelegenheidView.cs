@@ -16,5 +16,10 @@ namespace ZonderZorgenGit.View
         {
             InitializeComponent();
         }
+
+        private void MainPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

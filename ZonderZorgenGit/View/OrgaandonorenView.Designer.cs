@@ -43,9 +43,9 @@
             this.SidePnl.Controls.Add(this.DatasetsBtn);
             this.SidePnl.Controls.Add(this.DashboardBtn);
             this.SidePnl.Controls.Add(this.OverBtn);
-            this.SidePnl.Location = new System.Drawing.Point(0, 0);
+            this.SidePnl.Location = new System.Drawing.Point(0, -4);
             this.SidePnl.Name = "SidePnl";
-            this.SidePnl.Size = new System.Drawing.Size(265, 735);
+            this.SidePnl.Size = new System.Drawing.Size(265, 739);
             this.SidePnl.TabIndex = 0;
             // 
             // MainPnl
@@ -102,7 +102,6 @@
             this.Controls.Add(this.SidePnl);
             this.Name = "OrgaandonorenView";
             this.Text = "ZonderZorgen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.SidePnl.ResumeLayout(false);
             this.ResumeLayout(false);
 

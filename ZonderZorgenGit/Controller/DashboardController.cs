@@ -9,9 +9,9 @@ namespace ZonderZorgenGit.Controller
 {
     public class DashboardController
     {
-        ConnectionController mainConnection;
-        bool connectionStatus;
-        DashboardView dashboardView;
+        private ConnectionController mainConnection;
+        private bool connectionStatus;
+        private DashboardView dashboardView;
 
         public DashboardController(ConnectionController connectionControllerP, bool connectionStatusP)
         {
@@ -23,6 +23,10 @@ namespace ZonderZorgenGit.Controller
         private void Initialize()
         {
             dashboardView.Show();
+        }
+        public ConnectionController GetConnection()
+        {
+            return this.mainConnection;
         }
     }
 }
