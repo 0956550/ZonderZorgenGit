@@ -29,31 +29,68 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZorgkostenView));
-            this.LogoImg = new System.Windows.Forms.PictureBox();
-            this.DoctorImg = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DoctorImg)).BeginInit();
+            this.SidePnl = new System.Windows.Forms.Panel();
+            this.MainPnl = new System.Windows.Forms.Panel();
+            this.DatasetsBtn = new System.Windows.Forms.Button();
+            this.OverBtn = new System.Windows.Forms.Button();
+            this.DashboardBtn = new System.Windows.Forms.Button();
+            this.SidePnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // LogoImg
+            // SidePnl
             // 
-            this.LogoImg.Image = ((System.Drawing.Image)(resources.GetObject("LogoImg.Image")));
-            this.LogoImg.Location = new System.Drawing.Point(1052, 12);
-            this.LogoImg.Name = "LogoImg";
-            this.LogoImg.Size = new System.Drawing.Size(200, 70);
-            this.LogoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LogoImg.TabIndex = 0;
-            this.LogoImg.TabStop = false;
+            this.SidePnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SidePnl.BackgroundImage")));
+            this.SidePnl.Controls.Add(this.DatasetsBtn);
+            this.SidePnl.Controls.Add(this.DashboardBtn);
+            this.SidePnl.Controls.Add(this.OverBtn);
+            this.SidePnl.Location = new System.Drawing.Point(0, 0);
+            this.SidePnl.Name = "SidePnl";
+            this.SidePnl.Size = new System.Drawing.Size(265, 735);
+            this.SidePnl.TabIndex = 0;
             // 
-            // DoctorImg
+            // MainPnl
             // 
-            this.DoctorImg.Image = ((System.Drawing.Image)(resources.GetObject("DoctorImg.Image")));
-            this.DoctorImg.Location = new System.Drawing.Point(1052, 467);
-            this.DoctorImg.Name = "DoctorImg";
-            this.DoctorImg.Size = new System.Drawing.Size(200, 250);
-            this.DoctorImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DoctorImg.TabIndex = 1;
-            this.DoctorImg.TabStop = false;
+            this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
+            this.MainPnl.Location = new System.Drawing.Point(272, 12);
+            this.MainPnl.Name = "MainPnl";
+            this.MainPnl.Size = new System.Drawing.Size(980, 705);
+            this.MainPnl.TabIndex = 1;
+            // 
+            // DatasetsBtn
+            // 
+            this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
+            this.DatasetsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DatasetsBtn.FlatAppearance.BorderSize = 2;
+            this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DatasetsBtn.Location = new System.Drawing.Point(56, 300);
+            this.DatasetsBtn.Name = "DatasetsBtn";
+            this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
+            this.DatasetsBtn.TabIndex = 8;
+            this.DatasetsBtn.UseVisualStyleBackColor = true;
+            // 
+            // OverBtn
+            // 
+            this.OverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OverBtn.BackgroundImage")));
+            this.OverBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.OverBtn.FlatAppearance.BorderSize = 2;
+            this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OverBtn.Location = new System.Drawing.Point(56, 244);
+            this.OverBtn.Name = "OverBtn";
+            this.OverBtn.Size = new System.Drawing.Size(150, 50);
+            this.OverBtn.TabIndex = 7;
+            this.OverBtn.UseVisualStyleBackColor = true;
+            // 
+            // DashboardBtn
+            // 
+            this.DashboardBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.BackgroundImage")));
+            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DashboardBtn.FlatAppearance.BorderSize = 2;
+            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DashboardBtn.Location = new System.Drawing.Point(56, 188);
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
+            this.DashboardBtn.TabIndex = 9;
+            this.DashboardBtn.UseVisualStyleBackColor = true;
             // 
             // ZorgkostenView
             // 
@@ -61,19 +98,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 729);
-            this.Controls.Add(this.DoctorImg);
-            this.Controls.Add(this.LogoImg);
+            this.Controls.Add(this.MainPnl);
+            this.Controls.Add(this.SidePnl);
             this.Name = "ZorgkostenView";
             this.Text = "ZonderZorgen";
-            ((System.ComponentModel.ISupportInitialize)(this.LogoImg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DoctorImg)).EndInit();
+            this.SidePnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox LogoImg;
-        private System.Windows.Forms.PictureBox DoctorImg;
+        private System.Windows.Forms.Panel SidePnl;
+        private System.Windows.Forms.Panel MainPnl;
+        private System.Windows.Forms.Button DatasetsBtn;
+        private System.Windows.Forms.Button DashboardBtn;
+        private System.Windows.Forms.Button OverBtn;
     }
 }
