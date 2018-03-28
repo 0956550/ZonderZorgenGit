@@ -131,7 +131,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Images\doctor.jpg" />
+    <Content Include="Images\MainPanelLayout.jpg" />
+    <Content Include="Images\orgaandonorenLogo.jpg" />
+    <Content Include="Images\SidePanelLayout.jpg" />
+    <Content Include="Images\WerkgelegenheidLogo.jpg" />
     <Content Include="Images\zonderzorgen.jpg" />
+    <Content Include="Images\ZorgkostenLogo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

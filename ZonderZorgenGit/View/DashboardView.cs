@@ -20,10 +20,5 @@ namespace ZonderZorgenGit.View
             InitializeComponent();
             dashboardController = dashboardControllerP;
         }
-
-        private void DashboardView_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

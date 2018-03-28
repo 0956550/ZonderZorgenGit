@@ -38,9 +38,9 @@
             // LogoImg
             // 
             this.LogoImg.Image = ((System.Drawing.Image)(resources.GetObject("LogoImg.Image")));
-            this.LogoImg.Location = new System.Drawing.Point(1002, 12);
+            this.LogoImg.Location = new System.Drawing.Point(1052, 12);
             this.LogoImg.Name = "LogoImg";
-            this.LogoImg.Size = new System.Drawing.Size(250, 100);
+            this.LogoImg.Size = new System.Drawing.Size(200, 70);
             this.LogoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LogoImg.TabIndex = 0;
             this.LogoImg.TabStop = false;
@@ -48,9 +48,9 @@
             // DoctorImg
             // 
             this.DoctorImg.Image = ((System.Drawing.Image)(resources.GetObject("DoctorImg.Image")));
-            this.DoctorImg.Location = new System.Drawing.Point(1002, 430);
+            this.DoctorImg.Location = new System.Drawing.Point(1052, 467);
             this.DoctorImg.Name = "DoctorImg";
-            this.DoctorImg.Size = new System.Drawing.Size(250, 300);
+            this.DoctorImg.Size = new System.Drawing.Size(200, 250);
             this.DoctorImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DoctorImg.TabIndex = 1;
             this.DoctorImg.TabStop = false;
