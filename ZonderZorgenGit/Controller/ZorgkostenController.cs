@@ -17,7 +17,7 @@ namespace ZonderZorgenGit.Controller
         {
             this.mainConnection = connectionControllerP;
             this.dashboardView = dashboardViewP;
-            this.zorgkostenView = new ZorgkostenView(this);
+            this.zorgkostenView = new ZorgkostenView(this, mainConnection);
             Initialize();
         }
 

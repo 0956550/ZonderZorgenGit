@@ -27,7 +27,7 @@ namespace ZonderZorgenGit
             if (mainConnection.GetConnectionStatus())
             {
                 ConnectionStatusLbl.Text = "Status: Connected";
-                DashboardController dashboardController = new DashboardController(mainConnection, mainConnection.GetConnectionStatus());
+                DashboardController dashboardController = new DashboardController(mainConnection);
             }
             else
             {

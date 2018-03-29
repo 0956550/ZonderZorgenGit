@@ -13,10 +13,10 @@ namespace ZonderZorgenGit.Controller
         private bool connectionStatus;
         private DashboardView dashboardView;
 
-        public DashboardController(ConnectionController connectionControllerP, bool connectionStatusP)
+        public DashboardController(ConnectionController connectionControllerP)
         {
             mainConnection = connectionControllerP;
-            connectionStatus = connectionStatusP;
+            connectionStatus = mainConnection.GetConnectionStatus();
             dashboardView = new DashboardView(this);
             Initialize();
         }

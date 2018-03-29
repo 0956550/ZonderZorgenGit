@@ -14,16 +14,19 @@ namespace ZonderZorgenGit.View
     public partial class WerkgelegenheidView : Form
     {
         private WerkgelegenheidController werkgelegenheidController;
+        private ConnectionController mainConnection;
 
-        public WerkgelegenheidView(WerkgelegenheidController werkgelegenheidControllerP)
+        public WerkgelegenheidView(WerkgelegenheidController werkgelegenheidControllerP, ConnectionController connectionControllerP)
         {
             this.werkgelegenheidController = werkgelegenheidControllerP;
+            this.mainConnection = connectionControllerP;
             InitializeComponent();
         }
 
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
-
+            DashboardController dashboardController = new DashboardController(this.mainConnection);
+            this.Close();
         }
     }
 }

@@ -18,7 +18,7 @@ namespace ZonderZorgenGit.Controller
         {
             this.mainConnection = connectionControllerP;
             this.dashboardView = dashboardViewP;
-            werkgelegenheidView = new WerkgelegenheidView(this);
+            werkgelegenheidView = new WerkgelegenheidView(this, this.mainConnection);
             this.Initialize();
         }
 

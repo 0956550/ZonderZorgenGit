@@ -14,16 +14,19 @@ namespace ZonderZorgenGit.View
     public partial class ZorgkostenView : Form
     {
         private ZorgkostenController zorgkostenController;
+        private ConnectionController mainConnection;
 
-        public ZorgkostenView(ZorgkostenController zorgkostenControllerP)
+        public ZorgkostenView(ZorgkostenController zorgkostenControllerP, ConnectionController connectionControllerP)
         {
+            this.mainConnection = connectionControllerP;
             this.zorgkostenController = zorgkostenControllerP;
             InitializeComponent();
         }
 
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
-
+            DashboardController dashboardController = new DashboardController(this.mainConnection);
+            this.Close();
         }
     }
 }

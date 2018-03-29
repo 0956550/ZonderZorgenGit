@@ -18,7 +18,7 @@ namespace ZonderZorgenGit.Controller
         {
             mainConnection = connectionControllerP;
             dashboardView = dashboardViewP;
-            orgaandonorenView = new OrgaandonorenView(this);
+            orgaandonorenView = new OrgaandonorenView(this, this.mainConnection);
             this.Initialize();
         }
 
