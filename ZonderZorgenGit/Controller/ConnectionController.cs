@@ -62,6 +62,7 @@ namespace ZonderZorgenGit.Controller
         {
             return connectionStatus;
         }
+
         public MySqlConnection GetConnection()
         {
             return connection;
