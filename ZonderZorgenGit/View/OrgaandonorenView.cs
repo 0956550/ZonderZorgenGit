@@ -36,17 +36,26 @@ namespace ZonderZorgenGit.View
 
         private void OrgaandonorenView_Load(object sender, EventArgs e)
         {
-            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Geregistreerd in donnorregister", 10);
             chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Geen toestemmingen", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Nabestaande beslissen", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Aangewezen persoon beslist", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd in donnorregister", 10);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            label1.Text = "Nederlandse Antillen / Aruba";
             chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Niet geregistreerd", 102);
             chart2.ChartAreas[0].RecalculateAxesScale();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Turkije";
         }
     }
 }
