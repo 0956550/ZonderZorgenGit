@@ -72,5 +72,10 @@ namespace ZonderZorgenGit.View
         {
             label1.Text = "Marokko";
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
