@@ -26,6 +26,7 @@ namespace ZonderZorgenGit.View
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
             DashboardController dashboardController = new DashboardController(this.mainConnection);
+            Console.WriteLine("Vagina");
             Console.WriteLine("Penis");
             this.Close();
         }
