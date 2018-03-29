@@ -61,7 +61,7 @@ namespace ZonderZorgenGit.View
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
+        {   
             label1.Text = "Suriname";
             chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
             chart2.Series["Aantal x 1000"].Points.ElementAt(6).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
