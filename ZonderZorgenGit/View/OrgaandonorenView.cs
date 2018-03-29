@@ -28,5 +28,25 @@ namespace ZonderZorgenGit.View
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             this.Close();
         }
+
+        private void chart2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrgaandonorenView_Load(object sender, EventArgs e)
+        {
+            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd", 10);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Niet geregistreerd", 102);
+            chart2.ChartAreas[0].RecalculateAxesScale();
+        }
     }
 }
