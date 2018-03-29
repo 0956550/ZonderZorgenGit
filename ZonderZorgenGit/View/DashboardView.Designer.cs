@@ -64,6 +64,8 @@
             this.DatasetsBtn.FlatAppearance.BorderSize = 2;
             this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DatasetsBtn.Location = new System.Drawing.Point(54, 296);
+            this.DatasetsBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.DatasetsBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.Name = "DatasetsBtn";
             this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.TabIndex = 6;
@@ -76,6 +78,8 @@
             this.OverBtn.FlatAppearance.BorderSize = 2;
             this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OverBtn.Location = new System.Drawing.Point(54, 240);
+            this.OverBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.OverBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.OverBtn.Name = "OverBtn";
             this.OverBtn.Size = new System.Drawing.Size(150, 50);
             this.OverBtn.TabIndex = 2;
@@ -88,6 +92,8 @@
             this.DashboardBtn.FlatAppearance.BorderSize = 2;
             this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashboardBtn.Location = new System.Drawing.Point(54, 184);
+            this.DashboardBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.DashboardBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.DashboardBtn.Name = "DashboardBtn";
             this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
             this.DashboardBtn.TabIndex = 6;
@@ -147,6 +153,8 @@
             this.ZorgkostenBtn.FlatAppearance.BorderSize = 2;
             this.ZorgkostenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ZorgkostenBtn.Location = new System.Drawing.Point(593, 248);
+            this.ZorgkostenBtn.MaximumSize = new System.Drawing.Size(200, 200);
+            this.ZorgkostenBtn.MinimumSize = new System.Drawing.Size(200, 200);
             this.ZorgkostenBtn.Name = "ZorgkostenBtn";
             this.ZorgkostenBtn.Size = new System.Drawing.Size(200, 200);
             this.ZorgkostenBtn.TabIndex = 2;
@@ -160,6 +168,8 @@
             this.WerkgelegenheidBtn.FlatAppearance.BorderSize = 2;
             this.WerkgelegenheidBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WerkgelegenheidBtn.Location = new System.Drawing.Point(387, 248);
+            this.WerkgelegenheidBtn.MaximumSize = new System.Drawing.Size(200, 200);
+            this.WerkgelegenheidBtn.MinimumSize = new System.Drawing.Size(200, 200);
             this.WerkgelegenheidBtn.Name = "WerkgelegenheidBtn";
             this.WerkgelegenheidBtn.Size = new System.Drawing.Size(200, 200);
             this.WerkgelegenheidBtn.TabIndex = 1;
@@ -173,6 +183,8 @@
             this.OrgaandonorenBtn.FlatAppearance.BorderSize = 2;
             this.OrgaandonorenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OrgaandonorenBtn.Location = new System.Drawing.Point(181, 248);
+            this.OrgaandonorenBtn.MaximumSize = new System.Drawing.Size(200, 200);
+            this.OrgaandonorenBtn.MinimumSize = new System.Drawing.Size(200, 200);
             this.OrgaandonorenBtn.Name = "OrgaandonorenBtn";
             this.OrgaandonorenBtn.Size = new System.Drawing.Size(200, 200);
             this.OrgaandonorenBtn.TabIndex = 0;

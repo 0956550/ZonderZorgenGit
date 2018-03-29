@@ -44,6 +44,8 @@
             this.SidePnl.Controls.Add(this.DashboardBtn);
             this.SidePnl.Controls.Add(this.OverBtn);
             this.SidePnl.Location = new System.Drawing.Point(0, 0);
+            this.SidePnl.MaximumSize = new System.Drawing.Size(265, 735);
+            this.SidePnl.MinimumSize = new System.Drawing.Size(265, 735);
             this.SidePnl.Name = "SidePnl";
             this.SidePnl.Size = new System.Drawing.Size(265, 735);
             this.SidePnl.TabIndex = 0;
@@ -55,6 +57,8 @@
             this.DatasetsBtn.FlatAppearance.BorderSize = 2;
             this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DatasetsBtn.Location = new System.Drawing.Point(57, 298);
+            this.DatasetsBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.DatasetsBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.Name = "DatasetsBtn";
             this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.TabIndex = 8;
@@ -67,6 +71,8 @@
             this.DashboardBtn.FlatAppearance.BorderSize = 2;
             this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashboardBtn.Location = new System.Drawing.Point(57, 186);
+            this.DashboardBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.DashboardBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.DashboardBtn.Name = "DashboardBtn";
             this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
             this.DashboardBtn.TabIndex = 9;
@@ -80,6 +86,8 @@
             this.OverBtn.FlatAppearance.BorderSize = 2;
             this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OverBtn.Location = new System.Drawing.Point(57, 242);
+            this.OverBtn.MaximumSize = new System.Drawing.Size(150, 50);
+            this.OverBtn.MinimumSize = new System.Drawing.Size(150, 50);
             this.OverBtn.Name = "OverBtn";
             this.OverBtn.Size = new System.Drawing.Size(150, 50);
             this.OverBtn.TabIndex = 7;
@@ -89,6 +97,8 @@
             // 
             this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
             this.MainPnl.Location = new System.Drawing.Point(271, 12);
+            this.MainPnl.MaximumSize = new System.Drawing.Size(980, 705);
+            this.MainPnl.MinimumSize = new System.Drawing.Size(980, 705);
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
@@ -101,6 +111,8 @@
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.MainPnl);
             this.Controls.Add(this.SidePnl);
+            this.MaximumSize = new System.Drawing.Size(1280, 768);
+            this.MinimumSize = new System.Drawing.Size(1280, 768);
             this.Name = "WerkgelegenheidView";
             this.Text = "ZonderZorgen";
             this.SidePnl.ResumeLayout(false);

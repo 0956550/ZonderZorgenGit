@@ -89,6 +89,8 @@
             // 
             this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
             this.MainPnl.Location = new System.Drawing.Point(271, 12);
+            this.MainPnl.MaximumSize = new System.Drawing.Size(980, 705);
+            this.MainPnl.MinimumSize = new System.Drawing.Size(980, 705);
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
@@ -101,6 +103,8 @@
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.MainPnl);
             this.Controls.Add(this.SidePnl);
+            this.MaximumSize = new System.Drawing.Size(1280, 768);
+            this.MinimumSize = new System.Drawing.Size(1280, 768);
             this.Name = "OrgaandonorenView";
             this.Text = "ZonderZorgen";
             this.SidePnl.ResumeLayout(false);
