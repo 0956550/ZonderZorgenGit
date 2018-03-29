@@ -28,6 +28,7 @@ namespace ZonderZorgenGit.View
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             Console.WriteLine("Vagina");
             Console.WriteLine("Penis");
+            Console.WriteLine("Test1");
             this.Close();
         }
     }
