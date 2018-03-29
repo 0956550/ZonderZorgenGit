@@ -23,7 +23,7 @@ namespace ZonderZorgenGit.View
 
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

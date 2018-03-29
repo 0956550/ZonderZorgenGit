@@ -51,6 +51,8 @@
             this.SidePnl.Controls.Add(this.OverBtn);
             this.SidePnl.Controls.Add(this.DashboardBtn);
             this.SidePnl.Location = new System.Drawing.Point(0, -2);
+            this.SidePnl.MaximumSize = new System.Drawing.Size(265, 735);
+            this.SidePnl.MinimumSize = new System.Drawing.Size(265, 735);
             this.SidePnl.Name = "SidePnl";
             this.SidePnl.Size = new System.Drawing.Size(265, 735);
             this.SidePnl.TabIndex = 0;
@@ -102,6 +104,8 @@
             this.MainPnl.Controls.Add(this.WerkgelegenheidBtn);
             this.MainPnl.Controls.Add(this.OrgaandonorenBtn);
             this.MainPnl.Location = new System.Drawing.Point(271, 12);
+            this.MainPnl.MaximumSize = new System.Drawing.Size(980, 705);
+            this.MainPnl.MinimumSize = new System.Drawing.Size(980, 705);
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
@@ -177,12 +181,13 @@
             // 
             // DashboardView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.MainPnl);
             this.Controls.Add(this.SidePnl);
+            this.MaximumSize = new System.Drawing.Size(1280, 768);
+            this.MinimumSize = new System.Drawing.Size(1280, 768);
             this.Name = "DashboardView";
             this.Text = "ZonderZorgen";
             this.SidePnl.ResumeLayout(false);
