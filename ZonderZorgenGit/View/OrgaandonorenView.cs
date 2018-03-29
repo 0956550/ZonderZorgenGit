@@ -27,7 +27,6 @@ namespace ZonderZorgenGit.View
         {
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             Console.WriteLine("Test 3");
-            Console.WriteLine("Test1");
             this.Close();
         }
     }
