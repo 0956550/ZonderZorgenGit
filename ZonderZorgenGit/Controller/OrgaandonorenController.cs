@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZonderZorgenGit.Model;
 using ZonderZorgenGit.View;
 
 namespace ZonderZorgenGit.Controller
@@ -12,6 +13,8 @@ namespace ZonderZorgenGit.Controller
 
         private ConnectionController mainConnection;
         private OrgaandonorenView orgaandonorenView;
+        private DonorregistratiesPersoonskenmerkenModel donorregistratiesPersoonskenmerkenModel;
+        
         private DashboardView dashboardView;
 
         public OrgaandonorenController(ConnectionController connectionControllerP, DashboardView dashboardViewP)
@@ -19,6 +22,7 @@ namespace ZonderZorgenGit.Controller
             mainConnection = connectionControllerP;
             dashboardView = dashboardViewP;
             orgaandonorenView = new OrgaandonorenView(this, this.mainConnection);
+            this.donorregistratiesPersoonskenmerkenModel = new DonorregistratiesPersoonskenmerkenModel(mainConnection);
             this.Initialize();
         }
 
@@ -27,5 +31,16 @@ namespace ZonderZorgenGit.Controller
             this.orgaandonorenView.Show();
             this.dashboardView.Close();
         }
+        public List<string>[] GetData(int switchId)
+        {
+            switch (switchId)
+            {
+                case 1:
+                    return donorregistratiesPersoonskenmerkenModel.GetAntillen();
+                case 2:
+                    return donorregistratiesPersoonskenmerkenModel.GetSuriname();
+            }
+            return null;
+        }  
     }
 }

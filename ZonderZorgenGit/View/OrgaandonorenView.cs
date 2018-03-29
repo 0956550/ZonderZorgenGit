@@ -47,8 +47,9 @@ namespace ZonderZorgenGit.View
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Text = "Nederlandse Antillen / Aruba";
-            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Niet geregistreerd", 102);
+            label1.Text = "Antillen";
+            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[0][0]));
+            chart2.Series["Aantal x 1000"].Points.ElementAt(6).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[1][0]));
             chart2.ChartAreas[0].RecalculateAxesScale();
 
         }
@@ -56,6 +57,20 @@ namespace ZonderZorgenGit.View
         private void button1_Click(object sender, EventArgs e)
         {
             label1.Text = "Turkije";
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Suriname";
+            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
+            chart2.Series["Aantal x 1000"].Points.ElementAt(6).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
+            chart2.ChartAreas[0].RecalculateAxesScale();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Marokko";
         }
     }
 }
