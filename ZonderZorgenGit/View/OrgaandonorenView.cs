@@ -29,6 +29,7 @@ namespace ZonderZorgenGit.View
             Console.WriteLine("Test 3");
             Console.WriteLine("Vagina");
             Console.WriteLine("Penis");
+            Console.WriteLine("Test1");
             this.Close();
         }
     }
