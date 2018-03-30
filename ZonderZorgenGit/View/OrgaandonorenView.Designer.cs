@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrgaandonorenView));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.SidePnl = new System.Windows.Forms.Panel();
             this.DatasetsBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
@@ -53,6 +53,8 @@
             this.geregistreerd = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Hoe = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SidePnl.SuspendLayout();
             this.MainPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -111,6 +113,8 @@
             // MainPnl
             // 
             this.MainPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MainPnl.BackgroundImage")));
+            this.MainPnl.Controls.Add(this.label5);
+            this.MainPnl.Controls.Add(this.label4);
             this.MainPnl.Controls.Add(this.label3);
             this.MainPnl.Controls.Add(this.Hoe);
             this.MainPnl.Controls.Add(this.geregistreerd);
@@ -152,7 +156,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(483, 571);
+            this.button4.Location = new System.Drawing.Point(21, 619);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
@@ -162,7 +166,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(335, 571);
+            this.button3.Location = new System.Drawing.Point(165, 619);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 23);
             this.button3.TabIndex = 4;
@@ -172,23 +176,23 @@
             // 
             // chart1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(-299, -69);
             this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(26, 571);
+            this.button2.Location = new System.Drawing.Point(26, 648);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 23);
             this.button2.TabIndex = 1;
@@ -198,7 +202,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(183, 571);
+            this.button1.Location = new System.Drawing.Point(176, 648);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 23);
             this.button1.TabIndex = 0;
@@ -208,57 +212,81 @@
             // 
             // geregistreerd
             // 
-            chartArea5.Name = "ChartArea1";
-            this.geregistreerd.ChartAreas.Add(chartArea5);
-            legend5.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend5.IsTextAutoFit = false;
-            legend5.Name = "Legend1";
-            this.geregistreerd.Legends.Add(legend5);
-            this.geregistreerd.Location = new System.Drawing.Point(26, 132);
+            chartArea2.Name = "ChartArea1";
+            this.geregistreerd.ChartAreas.Add(chartArea2);
+            legend2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.geregistreerd.Legends.Add(legend2);
+            this.geregistreerd.Location = new System.Drawing.Point(21, 197);
             this.geregistreerd.Name = "geregistreerd";
             this.geregistreerd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series5.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.IsValueShownAsLabel = true;
-            series5.Legend = "Legend1";
-            series5.Name = "Geregistreerd";
-            this.geregistreerd.Series.Add(series5);
-            this.geregistreerd.Size = new System.Drawing.Size(378, 300);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Geregistreerd";
+            this.geregistreerd.Series.Add(series2);
+            this.geregistreerd.Size = new System.Drawing.Size(506, 300);
             this.geregistreerd.TabIndex = 8;
             this.geregistreerd.Text = "chart2";
             // 
             // Hoe
             // 
-            chartArea4.Name = "ChartArea1";
-            this.Hoe.ChartAreas.Add(chartArea4);
-            legend4.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend4.IsTextAutoFit = false;
-            legend4.Name = "Legend1";
-            this.Hoe.Legends.Add(legend4);
-            this.Hoe.Location = new System.Drawing.Point(448, 132);
+            chartArea1.Name = "ChartArea1";
+            this.Hoe.ChartAreas.Add(chartArea1);
+            legend1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+            legend1.Name = "Legend1";
+            this.Hoe.Legends.Add(legend1);
+            this.Hoe.Location = new System.Drawing.Point(544, 197);
             this.Hoe.Name = "Hoe";
             this.Hoe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series4.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.IsValueShownAsLabel = true;
-            series4.Legend = "Legend1";
-            series4.Name = "hoe";
-            this.Hoe.Series.Add(series4);
-            this.Hoe.Size = new System.Drawing.Size(433, 300);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "hoe";
+            series1.YValuesPerPoint = 6;
+            this.Hoe.Series.Add(series1);
+            this.Hoe.Size = new System.Drawing.Size(433, 492);
             this.Hoe.TabIndex = 9;
             this.Hoe.Text = "chart3";
+            this.Hoe.Click += new System.EventHandler(this.Hoe_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Th", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 456);
+            this.label3.Location = new System.Drawing.Point(22, 526);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(505, 47);
             this.label3.TabIndex = 10;
             this.label3.Text = "Geen herkomst geselecteerd !";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(420, 34);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Verdeling wel of niet geregistreerd";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(545, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(304, 34);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Verdeling geregistreerde";
             // 
             // OrgaandonorenView
             // 
@@ -299,5 +327,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart Hoe;
         private System.Windows.Forms.DataVisualization.Charting.Chart geregistreerd;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

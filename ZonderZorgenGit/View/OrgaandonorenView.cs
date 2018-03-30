@@ -68,23 +68,56 @@ namespace ZonderZorgenGit.View
         private void button1_Click(object sender, EventArgs e)
         {
             label3.Text = "Turkije";
-
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(3)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(3)[7][0]));
+            Hoe.Series["hoe"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(3)[2][0]));
+            Hoe.Series["hoe"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(3)[3][0]));
+            Hoe.Series["hoe"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(3)[4][0]));
+            Hoe.Series["hoe"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(3)[5][0]));
+            Hoe.Series["hoe"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(3)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {   
             label3.Text = "Suriname";
-            //chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
-            //chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
-            //chart2.ChartAreas[0].RecalculateAxesScale();
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(2)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(2)[7][0]));
+            Hoe.Series["hoe"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(2)[2][0]));
+            Hoe.Series["hoe"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(2)[3][0]));
+            Hoe.Series["hoe"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(2)[4][0]));
+            Hoe.Series["hoe"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(2)[5][0]));
+            Hoe.Series["hoe"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(2)[6][0]));
+            Hoe.ChartAreas[0].RecalculateAxesScale();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             label3.Text = "Marokko";
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(4)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(4)[7][0]));
+            Hoe.Series["hoe"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(4)[2][0]));
+            Hoe.Series["hoe"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(4)[3][0]));
+            Hoe.Series["hoe"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(4)[4][0]));
+            Hoe.Series["hoe"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(4)[5][0]));
+            Hoe.Series["hoe"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(4)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hoe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
