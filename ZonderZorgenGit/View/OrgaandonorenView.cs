@@ -49,7 +49,7 @@ namespace ZonderZorgenGit.View
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Text = "Antillen";
+            label3.Text = "Antillen";
             geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(1)[1][0]));
             geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(1)[7][0]));
             Hoe.Series["hoe"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(1)[2][0]));
@@ -67,13 +67,13 @@ namespace ZonderZorgenGit.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Turkije";
+            label3.Text = "Turkije";
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {   
-            label1.Text = "Suriname";
+            label3.Text = "Suriname";
             //chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
             //chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
             //chart2.ChartAreas[0].RecalculateAxesScale();
@@ -81,7 +81,7 @@ namespace ZonderZorgenGit.View
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Text = "Marokko";
+            label3.Text = "Marokko";
         }
 
         private void label2_Click(object sender, EventArgs e)
