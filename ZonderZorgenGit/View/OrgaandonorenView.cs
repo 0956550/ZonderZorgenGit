@@ -31,7 +31,6 @@ namespace ZonderZorgenGit.View
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             this.Close();
         }
-
         private void chart2_Click(object sender, EventArgs e)
         {
 
@@ -39,17 +38,30 @@ namespace ZonderZorgenGit.View
 
         private void OrgaandonorenView_Load(object sender, EventArgs e)
         {
-            chart2.Series["Aantal x 1000"].Points.AddXY("Geregistreerd in donnorregister", 50);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 50);
+            geregistreerd.Series["Geregistreerd"].Points.AddXY("Wel geregistreerd", 50);
+            geregistreerd.Series["Geregistreerd"].Points.AddXY("Niet geregistreerd", 50);
+            Hoe.Series["hoe"].Points.AddXY("Toestemming zonder berperkingen", 5);
+            Hoe.Series["hoe"].Points.AddXY("Toestemming met beperkingen", 5);
+            Hoe.Series["hoe"].Points.AddXY("Geen toestemming", 5);
+            Hoe.Series["hoe"].Points.AddXY("Nabestaande Beslissen", 5);
+            Hoe.Series["hoe"].Points.AddXY("Aangeweze persoon beslist", 5);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             label1.Text = "Antillen";
-            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[1][0]));
-            chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Toestemming zonder donatiebeperkingen", int.Parse(orgaandonorenController.GetData(1)[2][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(1)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(1)[7][0]));
+            Hoe.Series["hoe"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(1)[2][0]));
+            Hoe.Series["hoe"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(1)[3][0]));
+            Hoe.Series["hoe"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(1)[4][0]));
+            Hoe.Series["hoe"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(1)[5][0]));
+            Hoe.Series["hoe"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(1)[6][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).Color = Color.Lime;
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).Color = Color.Red;
 
-            chart2.ChartAreas[0].RecalculateAxesScale();
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
 
         }
 
@@ -62,9 +74,9 @@ namespace ZonderZorgenGit.View
         private void button3_Click(object sender, EventArgs e)
         {   
             label1.Text = "Suriname";
-            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
-            chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
-            chart2.ChartAreas[0].RecalculateAxesScale();
+            //chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
+            //chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
+            //chart2.ChartAreas[0].RecalculateAxesScale();
         }
 
         private void button4_Click(object sender, EventArgs e)

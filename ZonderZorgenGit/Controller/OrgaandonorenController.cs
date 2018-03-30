@@ -39,6 +39,10 @@ namespace ZonderZorgenGit.Controller
                     return donorregistratiesPersoonskenmerkenModel.GetAntillen();
                 case 2:
                     return donorregistratiesPersoonskenmerkenModel.GetSuriname();
+                case 3:
+                    return donorregistratiesPersoonskenmerkenModel.GetTurkije();
+                case 4:
+                    return donorregistratiesPersoonskenmerkenModel.GetMarokko();
             }
             return null;
         }  
