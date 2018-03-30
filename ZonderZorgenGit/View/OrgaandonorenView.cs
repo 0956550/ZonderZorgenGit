@@ -36,20 +36,16 @@ namespace ZonderZorgenGit.View
 
         private void OrgaandonorenView_Load(object sender, EventArgs e)
         {
-            chart2.Series["Aantal x 1000"].Points.AddXY("Geregistreerd in donnorregister", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Geen toestemmingen", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Nabestaande beslissen", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Aangewezen persoon beslist", 10);
-            chart2.Series["Aantal x 1000"].Points.AddXY("Niet geregistreerd in donnorregister", 10);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Geregistreerd in donnorregister", 50);
+            chart2.Series["Aantal x 1000"].Points.AddXY("Toestemming zonder donatiebeperkingen", 50);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             label1.Text = "Antillen";
-            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[0][0]));
-            chart2.Series["Aantal x 1000"].Points.ElementAt(6).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[1][0]));
+            chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(1)[1][0]));
+            chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Toestemming zonder donatiebeperkingen", int.Parse(orgaandonorenController.GetData(1)[2][0]));
+
             chart2.ChartAreas[0].RecalculateAxesScale();
 
         }
@@ -64,7 +60,7 @@ namespace ZonderZorgenGit.View
         {   
             label1.Text = "Suriname";
             chart2.Series["Aantal x 1000"].Points.ElementAt(0).SetValueXY("Geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[0][0]));
-            chart2.Series["Aantal x 1000"].Points.ElementAt(6).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
+            chart2.Series["Aantal x 1000"].Points.ElementAt(1).SetValueXY("Niet geregistreerd in donnorregister", int.Parse(orgaandonorenController.GetData(2)[1][0]));
             chart2.ChartAreas[0].RecalculateAxesScale();
         }
 
