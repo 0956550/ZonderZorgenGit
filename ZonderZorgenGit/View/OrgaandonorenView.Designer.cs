@@ -29,20 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrgaandonorenView));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.SidePnl = new System.Windows.Forms.Panel();
             this.DatasetsBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.OverBtn = new System.Windows.Forms.Button();
             this.MainPnl = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Hoe = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.geregistreerd = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -50,16 +55,11 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.geregistreerd = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Hoe = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.SidePnl.SuspendLayout();
             this.MainPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.geregistreerd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hoe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.geregistreerd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // SidePnl
@@ -131,6 +131,87 @@
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(545, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(304, 34);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Verdeling geregistreerde";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(420, 34);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Verdeling wel of niet geregistreerd";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Roboto Th", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 526);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(505, 47);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Geen herkomst geselecteerd !";
+            // 
+            // Hoe
+            // 
+            chartArea1.Area3DStyle.Enable3D = true;
+            chartArea1.Name = "ChartArea1";
+            this.Hoe.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+            legend1.Name = "Legend1";
+            this.Hoe.Legends.Add(legend1);
+            this.Hoe.Location = new System.Drawing.Point(544, 197);
+            this.Hoe.Name = "Hoe";
+            this.Hoe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Verdeling geregistreerde";
+            series1.YValuesPerPoint = 6;
+            this.Hoe.Series.Add(series1);
+            this.Hoe.Size = new System.Drawing.Size(433, 500);
+            this.Hoe.TabIndex = 9;
+            this.Hoe.Text = "chart3";
+            // 
+            // geregistreerd
+            // 
+            chartArea2.Area3DStyle.Enable3D = true;
+            chartArea2.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea2.Area3DStyle.Rotation = 60;
+            chartArea2.Name = "ChartArea1";
+            this.geregistreerd.ChartAreas.Add(chartArea2);
+            legend2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.geregistreerd.Legends.Add(legend2);
+            this.geregistreerd.Location = new System.Drawing.Point(21, 197);
+            this.geregistreerd.Name = "geregistreerd";
+            this.geregistreerd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Geregistreerd";
+            this.geregistreerd.Series.Add(series2);
+            this.geregistreerd.Size = new System.Drawing.Size(506, 300);
+            this.geregistreerd.TabIndex = 8;
+            this.geregistreerd.Text = "chart2";
             // 
             // label2
             // 
@@ -209,82 +290,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // geregistreerd
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.geregistreerd.ChartAreas.Add(chartArea2);
-            legend2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend2.IsTextAutoFit = false;
-            legend2.Name = "Legend1";
-            this.geregistreerd.Legends.Add(legend2);
-            this.geregistreerd.Location = new System.Drawing.Point(21, 197);
-            this.geregistreerd.Name = "geregistreerd";
-            this.geregistreerd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Geregistreerd";
-            this.geregistreerd.Series.Add(series2);
-            this.geregistreerd.Size = new System.Drawing.Size(506, 300);
-            this.geregistreerd.TabIndex = 8;
-            this.geregistreerd.Text = "chart2";
-            // 
-            // Hoe
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.Hoe.ChartAreas.Add(chartArea1);
-            legend1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.IsTextAutoFit = false;
-            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
-            legend1.Name = "Legend1";
-            this.Hoe.Legends.Add(legend1);
-            this.Hoe.Location = new System.Drawing.Point(544, 197);
-            this.Hoe.Name = "Hoe";
-            this.Hoe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "hoe";
-            series1.YValuesPerPoint = 6;
-            this.Hoe.Series.Add(series1);
-            this.Hoe.Size = new System.Drawing.Size(433, 492);
-            this.Hoe.TabIndex = 9;
-            this.Hoe.Text = "chart3";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto Th", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 526);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(505, 47);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Geen herkomst geselecteerd !";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(420, 34);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Verdeling wel of niet geregistreerd";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(545, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(304, 34);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Verdeling geregistreerde";
-            // 
             // OrgaandonorenView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -300,9 +305,9 @@
             this.SidePnl.ResumeLayout(false);
             this.MainPnl.ResumeLayout(false);
             this.MainPnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.geregistreerd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hoe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.geregistreerd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
