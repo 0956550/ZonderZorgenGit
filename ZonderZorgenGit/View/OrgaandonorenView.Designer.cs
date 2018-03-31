@@ -138,9 +138,9 @@
             this.label5.Font = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(545, 137);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(304, 34);
+            this.label5.Size = new System.Drawing.Size(319, 34);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Verdeling geregistreerde";
+            this.label5.Text = "Verdeling geregistreerden";
             // 
             // label4
             // 
@@ -171,8 +171,9 @@
             legend1.Enabled = false;
             legend1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             legend1.IsTextAutoFit = false;
-            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
             legend1.Name = "Legend1";
+            legend1.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
             this.Hoe.Legends.Add(legend1);
             this.Hoe.Location = new System.Drawing.Point(544, 197);
             this.Hoe.Name = "Hoe";
@@ -185,6 +186,7 @@
             series1.LabelBorderColor = System.Drawing.Color.Black;
             series1.LabelBorderWidth = 2;
             series1.LabelForeColor = System.Drawing.Color.Maroon;
+            series1.LabelToolTip = "Hello";
             series1.Legend = "Legend1";
             series1.Name = "Verdeling geregistreerde";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
@@ -246,9 +248,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(21, 619);
+            this.button4.Location = new System.Drawing.Point(26, 593);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(124, 49);
             this.button4.TabIndex = 5;
             this.button4.Text = "Marokko";
             this.button4.UseVisualStyleBackColor = true;
@@ -256,9 +258,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(165, 619);
+            this.button3.Location = new System.Drawing.Point(165, 593);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 23);
+            this.button3.Size = new System.Drawing.Size(126, 49);
             this.button3.TabIndex = 4;
             this.button3.Text = "Suriname";
             this.button3.UseVisualStyleBackColor = true;
@@ -284,7 +286,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(26, 648);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 23);
+            this.button2.Size = new System.Drawing.Size(124, 49);
             this.button2.TabIndex = 1;
             this.button2.Text = "Antillen";
             this.button2.UseVisualStyleBackColor = true;
@@ -292,9 +294,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 648);
+            this.button1.Location = new System.Drawing.Point(165, 648);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 23);
+            this.button1.Size = new System.Drawing.Size(126, 49);
             this.button1.TabIndex = 0;
             this.button1.Text = "Turkije";
             this.button1.UseVisualStyleBackColor = true;

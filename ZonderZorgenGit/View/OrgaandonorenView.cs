@@ -38,6 +38,8 @@ namespace ZonderZorgenGit.View
             Hoe.Series["Verdeling geregistreerde"].Points.AddXY("Geen toestemming", 5);
             Hoe.Series["Verdeling geregistreerde"].Points.AddXY("Nabestaande Beslissen", 5);
             Hoe.Series["Verdeling geregistreerde"].Points.AddXY("Aangeweze persoon beslist", 5);
+            //Hoe.ChartAreas["ChartArea1"].AxisX.LabelStyle.Angle = -90;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
