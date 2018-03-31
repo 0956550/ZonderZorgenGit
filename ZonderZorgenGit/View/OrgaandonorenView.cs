@@ -31,10 +31,6 @@ namespace ZonderZorgenGit.View
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             this.Close();
         }
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void OrgaandonorenView_Load(object sender, EventArgs e)
         {
@@ -105,21 +101,6 @@ namespace ZonderZorgenGit.View
             Hoe.Series["hoe"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(4)[6][0]));
             geregistreerd.ChartAreas[0].RecalculateAxesScale();
             Hoe.ChartAreas[0].RecalculateAxesScale();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Hoe_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

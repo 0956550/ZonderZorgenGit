@@ -142,7 +142,6 @@
             this.label2.Size = new System.Drawing.Size(550, 97);
             this.label2.TabIndex = 7;
             this.label2.Text = "Orgaandonatie";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -255,7 +254,6 @@
             this.Hoe.Size = new System.Drawing.Size(433, 492);
             this.Hoe.TabIndex = 9;
             this.Hoe.Text = "chart3";
-            this.Hoe.Click += new System.EventHandler(this.Hoe_Click);
             // 
             // label3
             // 
@@ -276,7 +274,6 @@
             this.label4.Size = new System.Drawing.Size(420, 34);
             this.label4.TabIndex = 11;
             this.label4.Text = "Verdeling wel of niet geregistreerd";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
