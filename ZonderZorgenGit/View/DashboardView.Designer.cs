@@ -132,9 +132,9 @@
             this.WerkgelegenheidLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.WerkgelegenheidLbl.Location = new System.Drawing.Point(427, 451);
             this.WerkgelegenheidLbl.Name = "WerkgelegenheidLbl";
-            this.WerkgelegenheidLbl.Size = new System.Drawing.Size(125, 20);
+            this.WerkgelegenheidLbl.Size = new System.Drawing.Size(133, 20);
             this.WerkgelegenheidLbl.TabIndex = 4;
-            this.WerkgelegenheidLbl.Text = "Wergelegenheid";
+            this.WerkgelegenheidLbl.Text = "Werkgelegenheid";
             // 
             // OrgaandonorenLbl
             // 

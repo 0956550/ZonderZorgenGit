@@ -23,10 +23,31 @@ namespace ZonderZorgenGit.View
             InitializeComponent();
         }
 
+        private void ZorgkostenView_Load(object sender, EventArgs e)
+        {
+            ZorggebruikChrt.Series["2015"].Points.AddY(1);
+            ZorggebruikChrt.Series["2016"].Points.AddY(1);
+            ZorgkostenChrt.Series["2015"].Points.AddY(1);
+            ZorgkostenChrt.Series["2016"].Points.AddY(1);
+        }
+
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
             DashboardController dashboardController = new DashboardController(this.mainConnection);
             this.Close();
+        }
+
+        private void HuisartsBtn_Click(object sender, EventArgs e)
+        {
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData()[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData()[1][0]));
+            ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
+
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData()[0][1]);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData()[0][2]);
+            ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
         }
     }
 }
