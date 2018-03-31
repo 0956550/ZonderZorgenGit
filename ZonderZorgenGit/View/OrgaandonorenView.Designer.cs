@@ -164,6 +164,7 @@
             // 
             // Hoe
             // 
+            this.Hoe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             chartArea1.Area3DStyle.Enable3D = true;
             chartArea1.Name = "ChartArea1";
             this.Hoe.ChartAreas.Add(chartArea1);
@@ -178,10 +179,15 @@
             this.Hoe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
             series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series1.IsValueShownAsLabel = true;
+            series1.LabelBackColor = System.Drawing.Color.White;
+            series1.LabelBorderColor = System.Drawing.Color.Black;
+            series1.LabelBorderWidth = 2;
+            series1.LabelForeColor = System.Drawing.Color.Maroon;
             series1.Legend = "Legend1";
             series1.Name = "Verdeling geregistreerde";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.YValuesPerPoint = 6;
             this.Hoe.Series.Add(series1);
             this.Hoe.Size = new System.Drawing.Size(433, 500);
@@ -204,8 +210,12 @@
             this.geregistreerd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Font = new System.Drawing.Font("Roboto Th", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series2.IsValueShownAsLabel = true;
+            series2.LabelBackColor = System.Drawing.Color.White;
+            series2.LabelBorderColor = System.Drawing.Color.Black;
+            series2.LabelBorderWidth = 2;
+            series2.LabelForeColor = System.Drawing.Color.Maroon;
             series2.Legend = "Legend1";
             series2.Name = "Geregistreerd";
             this.geregistreerd.Series.Add(series2);
