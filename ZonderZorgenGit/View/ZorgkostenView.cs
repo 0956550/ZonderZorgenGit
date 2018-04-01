@@ -49,5 +49,25 @@ namespace ZonderZorgenGit.View
             ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
             ZorgkostenChrt.Refresh();
         }
+
+        private void TandartsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OndersteunendeDienstenBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ZiekenhuisBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotaalBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
