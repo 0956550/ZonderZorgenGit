@@ -37,14 +37,28 @@ namespace ZonderZorgenGit.Controller
             return this.dashboardView;
         }
 
-        public List<string>[] GetZorgkostenData()
+        public List<string>[] GetZorgkostenData(int switchId)
         {
-            return zorguitgavenModel.GetHuisartsKosten();
+            switch(switchId)
+            {
+                case 1:
+                    return zorguitgavenModel.GetHuisartsKosten();
+                case 2:
+                    return zorguitgavenModel.GetTandartsKosten();
+            }
+            return null;
         }
 
-        public List<string>[] GetZorggebruikData()
+        public List<string>[] GetZorggebruikData(int switchId)
         {
-            return zorggebruikModel.GetHuisartsGebruik();
+            switch(switchId)
+            {
+                case 1:
+                    return zorggebruikModel.GetHuisartsGebruik();
+                case 2:
+                    return zorggebruikModel.GetTandartsGebruik();
+            }
+            return null;
         }
     }
 }

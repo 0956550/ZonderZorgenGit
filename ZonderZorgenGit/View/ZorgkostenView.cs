@@ -39,20 +39,28 @@ namespace ZonderZorgenGit.View
 
         private void HuisartsBtn_Click(object sender, EventArgs e)
         {
-            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData()[0][0]));
-            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData()[1][0]));
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(1)[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(1)[1][0]));
             ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
             ZorgkostenChrt.Refresh();
 
-            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData()[0][1]);
-            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData()[0][2]);
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(1)[0][1]);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(1)[0][2]);
             ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
             ZorgkostenChrt.Refresh();
         }
 
         private void TandartsBtn_Click(object sender, EventArgs e)
         {
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(2)[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(2)[1][0]));
+            ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
 
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(2)[0][1]);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(2)[0][2]);
+            ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
         }
 
         private void OndersteunendeDienstenBtn_Click(object sender, EventArgs e)
