@@ -29,6 +29,14 @@ namespace ZonderZorgenGit.View
             ZorggebruikChrt.Series["2016"].Points.AddY(1);
             ZorgkostenChrt.Series["2015"].Points.AddY(1);
             ZorgkostenChrt.Series["2016"].Points.AddY(1);
+
+            ZorggebruikChrt.ChartAreas[0].AxisY.Maximum = 100;
+            ZorggebruikChrt.ChartAreas[0].AxisY.Minimum = 0;
+
+            ZorgkostenChrt.ChartAreas[0].AxisY.Minimum = 0;
+
+            ZorggebruikChrt.ChartAreas[0].AxisX.LabelStyle.Enabled = false;
+            ZorgkostenChrt.ChartAreas[0].AxisX.LabelStyle.Enabled = false;
         }
 
         private void DashboardBtn_Click(object sender, EventArgs e)
@@ -63,19 +71,43 @@ namespace ZonderZorgenGit.View
             ZorgkostenChrt.Refresh();
         }
 
-        private void OndersteunendeDienstenBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ZiekenhuisBtn_Click(object sender, EventArgs e)
         {
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(3)[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(3)[1][0]));
+            ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
 
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(3)[0][1]);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(3)[0][2]);
+            ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
+        }
+
+        private void OndersteunendeDienstenBtn_Click(object sender, EventArgs e)
+        {
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(4)[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(4)[1][0]));
+            ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
+
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(4)[0][1]);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(zorgkostenController.GetZorggebruikData(4)[0][2]);
+            ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
         }
 
         private void TotaalBtn_Click(object sender, EventArgs e)
         {
+            ZorgkostenChrt.Series["2015"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(5)[0][0]));
+            ZorgkostenChrt.Series["2016"].Points.ElementAt(0).SetValueY(int.Parse(zorgkostenController.GetZorgkostenData(5)[1][0]));
+            ZorgkostenChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
 
+            ZorggebruikChrt.Series["2015"].Points.ElementAt(0).SetValueY(100);
+            ZorggebruikChrt.Series["2016"].Points.ElementAt(0).SetValueY(100);
+            ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
+            ZorgkostenChrt.Refresh();
         }
     }
 }
