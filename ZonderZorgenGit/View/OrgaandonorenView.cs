@@ -99,5 +99,10 @@ namespace ZonderZorgenGit.View
             geregistreerd.ChartAreas[0].RecalculateAxesScale();
             Hoe.ChartAreas[0].RecalculateAxesScale();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
