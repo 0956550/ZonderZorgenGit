@@ -73,7 +73,7 @@ namespace ZonderZorgenGit.View
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {   
+        {
             label3.Text = "Suriname";
             geregistreerd.ChartAreas[0].RecalculateAxesScale();
             geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(2)[1][0]));
@@ -155,6 +155,14 @@ namespace ZonderZorgenGit.View
             Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(8)[6][0]));
             geregistreerd.ChartAreas[0].RecalculateAxesScale();
             Hoe.ChartAreas[0].RecalculateAxesScale();
+        }
+
+        private void OverBtn_Click(object sender, EventArgs e)
+        {
+                using (Over Over = new Over())
+                {
+                    Over.ShowDialog(this);
+                }
         }
     }
 }

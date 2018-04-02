@@ -86,6 +86,12 @@
     <Compile Include="View\OrgaandonorenView.Designer.cs">
       <DependentUpon>OrgaandonorenView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Over.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Over.Designer.cs">
+      <DependentUpon>Over.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\WerkgelegenheidView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\OrgaandonorenView.resx">
       <DependentUpon>OrgaandonorenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Over.resx">
+      <DependentUpon>Over.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\WerkgelegenheidView.resx">
       <DependentUpon>WerkgelegenheidView.cs</DependentUpon>

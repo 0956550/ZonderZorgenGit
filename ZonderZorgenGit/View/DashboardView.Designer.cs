@@ -84,6 +84,7 @@
             this.OverBtn.Size = new System.Drawing.Size(150, 50);
             this.OverBtn.TabIndex = 2;
             this.OverBtn.UseVisualStyleBackColor = true;
+            this.OverBtn.Click += new System.EventHandler(this.OverBtn_Click);
             // 
             // DashboardBtn
             // 
@@ -122,7 +123,7 @@
             this.ZorgkostenLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ZorgkostenLbl.Location = new System.Drawing.Point(648, 451);
             this.ZorgkostenLbl.Name = "ZorgkostenLbl";
-            this.ZorgkostenLbl.Size = new System.Drawing.Size(90, 20);
+            this.ZorgkostenLbl.Size = new System.Drawing.Size(110, 25);
             this.ZorgkostenLbl.TabIndex = 5;
             this.ZorgkostenLbl.Text = "Zorgkosten";
             // 
@@ -132,7 +133,7 @@
             this.WerkgelegenheidLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.WerkgelegenheidLbl.Location = new System.Drawing.Point(427, 451);
             this.WerkgelegenheidLbl.Name = "WerkgelegenheidLbl";
-            this.WerkgelegenheidLbl.Size = new System.Drawing.Size(133, 20);
+            this.WerkgelegenheidLbl.Size = new System.Drawing.Size(166, 25);
             this.WerkgelegenheidLbl.TabIndex = 4;
             this.WerkgelegenheidLbl.Text = "Werkgelegenheid";
             // 
@@ -142,7 +143,7 @@
             this.OrgaandonorenLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.OrgaandonorenLbl.Location = new System.Drawing.Point(224, 451);
             this.OrgaandonorenLbl.Name = "OrgaandonorenLbl";
-            this.OrgaandonorenLbl.Size = new System.Drawing.Size(121, 20);
+            this.OrgaandonorenLbl.Size = new System.Drawing.Size(150, 25);
             this.OrgaandonorenLbl.TabIndex = 3;
             this.OrgaandonorenLbl.Text = "Orgaandonoren";
             // 
@@ -195,7 +196,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 729);
+            this.ClientSize = new System.Drawing.Size(1262, 721);
             this.Controls.Add(this.MainPnl);
             this.Controls.Add(this.SidePnl);
             this.MaximumSize = new System.Drawing.Size(1280, 768);

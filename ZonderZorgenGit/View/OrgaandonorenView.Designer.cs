@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrgaandonorenView));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.SidePnl = new System.Windows.Forms.Panel();
             this.DatasetsBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.OverBtn = new System.Windows.Forms.Button();
             this.MainPnl = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.SidePnl.SuspendLayout();
             this.MainPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Hoe)).BeginInit();
@@ -115,6 +115,7 @@
             this.OverBtn.Size = new System.Drawing.Size(150, 50);
             this.OverBtn.TabIndex = 7;
             this.OverBtn.UseVisualStyleBackColor = true;
+            this.OverBtn.Click += new System.EventHandler(this.OverBtn_Click);
             // 
             // MainPnl
             // 
@@ -142,6 +143,16 @@
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(772, 71);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(181, 29);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "In duizendtallen";
             // 
             // button9
             // 
@@ -216,62 +227,62 @@
             // Hoe
             // 
             this.Hoe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            chartArea7.Area3DStyle.Enable3D = true;
-            chartArea7.Name = "ChartArea1";
-            this.Hoe.ChartAreas.Add(chartArea7);
-            legend7.Enabled = false;
-            legend7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend7.IsTextAutoFit = false;
-            legend7.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend7.Name = "Legend1";
-            legend7.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
-            this.Hoe.Legends.Add(legend7);
+            chartArea1.Area3DStyle.Enable3D = true;
+            chartArea1.Name = "ChartArea1";
+            this.Hoe.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend1.Name = "Legend1";
+            legend1.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
+            this.Hoe.Legends.Add(legend1);
             this.Hoe.Location = new System.Drawing.Point(544, 197);
             this.Hoe.Name = "Hoe";
             this.Hoe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series7.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
-            series7.ChartArea = "ChartArea1";
-            series7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series7.IsValueShownAsLabel = true;
-            series7.LabelBackColor = System.Drawing.Color.White;
-            series7.LabelBorderColor = System.Drawing.Color.Black;
-            series7.LabelBorderWidth = 2;
-            series7.LabelForeColor = System.Drawing.Color.Maroon;
-            series7.LabelToolTip = "Hello";
-            series7.Legend = "Legend1";
-            series7.Name = "Verdeling geregistreerde";
-            series7.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series7.YValuesPerPoint = 6;
-            this.Hoe.Series.Add(series7);
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelBackColor = System.Drawing.Color.White;
+            series1.LabelBorderColor = System.Drawing.Color.Black;
+            series1.LabelBorderWidth = 2;
+            series1.LabelForeColor = System.Drawing.Color.Maroon;
+            series1.LabelToolTip = "Hello";
+            series1.Legend = "Legend1";
+            series1.Name = "Verdeling geregistreerde";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.YValuesPerPoint = 6;
+            this.Hoe.Series.Add(series1);
             this.Hoe.Size = new System.Drawing.Size(433, 500);
             this.Hoe.TabIndex = 9;
             this.Hoe.Text = "chart3";
             // 
             // geregistreerd
             // 
-            chartArea8.Area3DStyle.Enable3D = true;
-            chartArea8.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea8.Area3DStyle.Rotation = 60;
-            chartArea8.Name = "ChartArea1";
-            this.geregistreerd.ChartAreas.Add(chartArea8);
-            legend8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend8.IsTextAutoFit = false;
-            legend8.Name = "Legend1";
-            this.geregistreerd.Legends.Add(legend8);
+            chartArea2.Area3DStyle.Enable3D = true;
+            chartArea2.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea2.Area3DStyle.Rotation = 60;
+            chartArea2.Name = "ChartArea1";
+            this.geregistreerd.ChartAreas.Add(chartArea2);
+            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.geregistreerd.Legends.Add(legend2);
             this.geregistreerd.Location = new System.Drawing.Point(21, 197);
             this.geregistreerd.Name = "geregistreerd";
             this.geregistreerd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series8.IsValueShownAsLabel = true;
-            series8.LabelBackColor = System.Drawing.Color.White;
-            series8.LabelBorderColor = System.Drawing.Color.Black;
-            series8.LabelBorderWidth = 2;
-            series8.LabelForeColor = System.Drawing.Color.Maroon;
-            series8.Legend = "Legend1";
-            series8.Name = "Geregistreerd";
-            this.geregistreerd.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.LabelBackColor = System.Drawing.Color.White;
+            series2.LabelBorderColor = System.Drawing.Color.Black;
+            series2.LabelBorderWidth = 2;
+            series2.LabelForeColor = System.Drawing.Color.Maroon;
+            series2.Legend = "Legend1";
+            series2.Name = "Geregistreerd";
+            this.geregistreerd.Series.Add(series2);
             this.geregistreerd.Size = new System.Drawing.Size(506, 300);
             this.geregistreerd.TabIndex = 8;
             this.geregistreerd.Text = "chart2";
@@ -319,16 +330,16 @@
             // 
             // chart1
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart1.Legends.Add(legend9);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(-299, -69);
             this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart1.Series.Add(series9);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
@@ -361,16 +372,6 @@
             this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(772, 71);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 29);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "In duizendtallen";
             // 
             // OrgaandonorenView
             // 

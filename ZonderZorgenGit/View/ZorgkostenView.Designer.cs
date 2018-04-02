@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZorgkostenView));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.SidePnl = new System.Windows.Forms.Panel();
             this.DatasetsBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.OverBtn = new System.Windows.Forms.Button();
             this.MainPnl = new System.Windows.Forms.Panel();
+            this.TotaalBtn = new System.Windows.Forms.Button();
+            this.OndersteunendeDienstenBtn = new System.Windows.Forms.Button();
+            this.ZiekenhuisBtn = new System.Windows.Forms.Button();
+            this.TandartsBtn = new System.Windows.Forms.Button();
             this.HuisartsBtn = new System.Windows.Forms.Button();
             this.ZorgkostenLbl = new System.Windows.Forms.Label();
             this.ZorgkostenChrt = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ZorggebruikChrt = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.TandartsBtn = new System.Windows.Forms.Button();
-            this.ZiekenhuisBtn = new System.Windows.Forms.Button();
-            this.OndersteunendeDienstenBtn = new System.Windows.Forms.Button();
-            this.TotaalBtn = new System.Windows.Forms.Button();
             this.SidePnl.SuspendLayout();
             this.MainPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZorgkostenChrt)).BeginInit();
@@ -105,6 +105,7 @@
             this.OverBtn.Size = new System.Drawing.Size(150, 50);
             this.OverBtn.TabIndex = 7;
             this.OverBtn.UseVisualStyleBackColor = true;
+            this.OverBtn.Click += new System.EventHandler(this.OverBtn_Click);
             // 
             // MainPnl
             // 
@@ -121,6 +122,50 @@
             this.MainPnl.Name = "MainPnl";
             this.MainPnl.Size = new System.Drawing.Size(980, 705);
             this.MainPnl.TabIndex = 1;
+            // 
+            // TotaalBtn
+            // 
+            this.TotaalBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TotaalBtn.Location = new System.Drawing.Point(25, 294);
+            this.TotaalBtn.Name = "TotaalBtn";
+            this.TotaalBtn.Size = new System.Drawing.Size(150, 30);
+            this.TotaalBtn.TabIndex = 8;
+            this.TotaalBtn.Text = "Totaal";
+            this.TotaalBtn.UseVisualStyleBackColor = true;
+            this.TotaalBtn.Click += new System.EventHandler(this.TotaalBtn_Click);
+            // 
+            // OndersteunendeDienstenBtn
+            // 
+            this.OndersteunendeDienstenBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.OndersteunendeDienstenBtn.Location = new System.Drawing.Point(25, 258);
+            this.OndersteunendeDienstenBtn.Name = "OndersteunendeDienstenBtn";
+            this.OndersteunendeDienstenBtn.Size = new System.Drawing.Size(150, 30);
+            this.OndersteunendeDienstenBtn.TabIndex = 7;
+            this.OndersteunendeDienstenBtn.Text = "Ondersteunend";
+            this.OndersteunendeDienstenBtn.UseVisualStyleBackColor = true;
+            this.OndersteunendeDienstenBtn.Click += new System.EventHandler(this.OndersteunendeDienstenBtn_Click);
+            // 
+            // ZiekenhuisBtn
+            // 
+            this.ZiekenhuisBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ZiekenhuisBtn.Location = new System.Drawing.Point(25, 222);
+            this.ZiekenhuisBtn.Name = "ZiekenhuisBtn";
+            this.ZiekenhuisBtn.Size = new System.Drawing.Size(150, 30);
+            this.ZiekenhuisBtn.TabIndex = 6;
+            this.ZiekenhuisBtn.Text = "Ziekenhuis";
+            this.ZiekenhuisBtn.UseVisualStyleBackColor = true;
+            this.ZiekenhuisBtn.Click += new System.EventHandler(this.ZiekenhuisBtn_Click);
+            // 
+            // TandartsBtn
+            // 
+            this.TandartsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TandartsBtn.Location = new System.Drawing.Point(25, 186);
+            this.TandartsBtn.Name = "TandartsBtn";
+            this.TandartsBtn.Size = new System.Drawing.Size(150, 30);
+            this.TandartsBtn.TabIndex = 5;
+            this.TandartsBtn.Text = "Tandarts";
+            this.TandartsBtn.UseVisualStyleBackColor = true;
+            this.TandartsBtn.Click += new System.EventHandler(this.TandartsBtn_Click);
             // 
             // HuisartsBtn
             // 
@@ -140,107 +185,63 @@
             this.ZorgkostenLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.ZorgkostenLbl.Location = new System.Drawing.Point(18, 51);
             this.ZorgkostenLbl.Name = "ZorgkostenLbl";
-            this.ZorgkostenLbl.Size = new System.Drawing.Size(178, 37);
+            this.ZorgkostenLbl.Size = new System.Drawing.Size(220, 46);
             this.ZorgkostenLbl.TabIndex = 3;
             this.ZorgkostenLbl.Text = "Zorgkosten";
             // 
             // ZorgkostenChrt
             // 
-            chartArea5.Name = "ChartArea1";
-            this.ZorgkostenChrt.ChartAreas.Add(chartArea5);
-            legend5.Name = "Percentage";
-            this.ZorgkostenChrt.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.ZorgkostenChrt.ChartAreas.Add(chartArea1);
+            legend1.Name = "Percentage";
+            this.ZorgkostenChrt.Legends.Add(legend1);
             this.ZorgkostenChrt.Location = new System.Drawing.Point(624, 150);
             this.ZorgkostenChrt.Name = "ZorgkostenChrt";
             this.ZorgkostenChrt.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Percentage";
-            series9.Name = "2015";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Percentage";
-            series10.Name = "2016";
-            this.ZorgkostenChrt.Series.Add(series9);
-            this.ZorgkostenChrt.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Percentage";
+            series1.Name = "2015";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Percentage";
+            series2.Name = "2016";
+            this.ZorgkostenChrt.Series.Add(series1);
+            this.ZorgkostenChrt.Series.Add(series2);
             this.ZorgkostenChrt.Size = new System.Drawing.Size(325, 530);
             this.ZorgkostenChrt.TabIndex = 1;
             this.ZorgkostenChrt.Text = "Zorgkosten";
-            title5.Name = "Zorgkosten in miljoenen";
-            title5.Text = "Zorgkosten in miljoenen";
-            this.ZorgkostenChrt.Titles.Add(title5);
+            title1.Name = "Zorgkosten in miljoenen";
+            title1.Text = "Zorgkosten in miljoenen";
+            this.ZorgkostenChrt.Titles.Add(title1);
             // 
             // ZorggebruikChrt
             // 
-            chartArea6.Name = "ChartArea1";
-            this.ZorggebruikChrt.ChartAreas.Add(chartArea6);
-            legend6.Name = "Percentage";
-            this.ZorggebruikChrt.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.ZorggebruikChrt.ChartAreas.Add(chartArea2);
+            legend2.Name = "Percentage";
+            this.ZorggebruikChrt.Legends.Add(legend2);
             this.ZorggebruikChrt.Location = new System.Drawing.Point(276, 150);
             this.ZorggebruikChrt.Name = "ZorggebruikChrt";
             this.ZorggebruikChrt.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Percentage";
-            series11.Name = "2015";
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Percentage";
-            series12.Name = "2016";
-            this.ZorggebruikChrt.Series.Add(series11);
-            this.ZorggebruikChrt.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Percentage";
+            series3.Name = "2015";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Percentage";
+            series4.Name = "2016";
+            this.ZorggebruikChrt.Series.Add(series3);
+            this.ZorggebruikChrt.Series.Add(series4);
             this.ZorggebruikChrt.Size = new System.Drawing.Size(325, 530);
             this.ZorggebruikChrt.TabIndex = 0;
             this.ZorggebruikChrt.Text = "Zorgkosten";
-            title6.Name = "Percentage zorggebruik";
-            title6.Text = "Percentage zorggebruik";
-            this.ZorggebruikChrt.Titles.Add(title6);
-            // 
-            // TandartsBtn
-            // 
-            this.TandartsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TandartsBtn.Location = new System.Drawing.Point(25, 186);
-            this.TandartsBtn.Name = "TandartsBtn";
-            this.TandartsBtn.Size = new System.Drawing.Size(150, 30);
-            this.TandartsBtn.TabIndex = 5;
-            this.TandartsBtn.Text = "Tandarts";
-            this.TandartsBtn.UseVisualStyleBackColor = true;
-            this.TandartsBtn.Click += new System.EventHandler(this.TandartsBtn_Click);
-            // 
-            // ZiekenhuisBtn
-            // 
-            this.ZiekenhuisBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ZiekenhuisBtn.Location = new System.Drawing.Point(25, 222);
-            this.ZiekenhuisBtn.Name = "ZiekenhuisBtn";
-            this.ZiekenhuisBtn.Size = new System.Drawing.Size(150, 30);
-            this.ZiekenhuisBtn.TabIndex = 6;
-            this.ZiekenhuisBtn.Text = "Ziekenhuis";
-            this.ZiekenhuisBtn.UseVisualStyleBackColor = true;
-            this.ZiekenhuisBtn.Click += new System.EventHandler(this.ZiekenhuisBtn_Click);
-            // 
-            // OndersteunendeDienstenBtn
-            // 
-            this.OndersteunendeDienstenBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.OndersteunendeDienstenBtn.Location = new System.Drawing.Point(25, 258);
-            this.OndersteunendeDienstenBtn.Name = "OndersteunendeDienstenBtn";
-            this.OndersteunendeDienstenBtn.Size = new System.Drawing.Size(150, 30);
-            this.OndersteunendeDienstenBtn.TabIndex = 7;
-            this.OndersteunendeDienstenBtn.Text = "Ondersteunend";
-            this.OndersteunendeDienstenBtn.UseVisualStyleBackColor = true;
-            this.OndersteunendeDienstenBtn.Click += new System.EventHandler(this.OndersteunendeDienstenBtn_Click);
-            // 
-            // TotaalBtn
-            // 
-            this.TotaalBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TotaalBtn.Location = new System.Drawing.Point(25, 294);
-            this.TotaalBtn.Name = "TotaalBtn";
-            this.TotaalBtn.Size = new System.Drawing.Size(150, 30);
-            this.TotaalBtn.TabIndex = 8;
-            this.TotaalBtn.Text = "Totaal";
-            this.TotaalBtn.UseVisualStyleBackColor = true;
-            this.TotaalBtn.Click += new System.EventHandler(this.TotaalBtn_Click);
+            title2.Name = "Percentage zorggebruik";
+            title2.Text = "Percentage zorggebruik";
+            this.ZorggebruikChrt.Titles.Add(title2);
             // 
             // ZorgkostenView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 729);
+            this.ClientSize = new System.Drawing.Size(1262, 721);
             this.Controls.Add(this.MainPnl);
             this.Controls.Add(this.SidePnl);
             this.MaximumSize = new System.Drawing.Size(1280, 768);

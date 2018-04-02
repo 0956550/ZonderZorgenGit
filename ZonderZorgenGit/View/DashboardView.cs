@@ -35,5 +35,13 @@ namespace ZonderZorgenGit.View
         {
             ZorgkostenController zorgkostenController = new ZorgkostenController(this.dashboardController.GetConnection(), this);
         }
+
+        private void OverBtn_Click(object sender, EventArgs e)
+        {
+            using (Over Over = new Over())
+            {
+                Over.ShowDialog(this);
+            }
+        }
     }
 }

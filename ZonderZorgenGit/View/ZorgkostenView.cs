@@ -109,5 +109,13 @@ namespace ZonderZorgenGit.View
             ZorggebruikChrt.ChartAreas[0].RecalculateAxesScale();
             ZorgkostenChrt.Refresh();
         }
+
+        private void OverBtn_Click(object sender, EventArgs e)
+        {
+            using (Over Over = new Over())
+            {
+                Over.ShowDialog(this);
+            }
+        }
     }
 }
