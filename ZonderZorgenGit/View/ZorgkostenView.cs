@@ -37,7 +37,7 @@ namespace ZonderZorgenGit.View
 
             ZorggebruikChrt.ChartAreas[0].AxisX.LabelStyle.Enabled = false;
             ZorgkostenChrt.ChartAreas[0].AxisX.LabelStyle.Enabled = false;
-        }
+            }
 
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
