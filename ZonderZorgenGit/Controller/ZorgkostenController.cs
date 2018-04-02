@@ -45,6 +45,12 @@ namespace ZonderZorgenGit.Controller
                     return zorguitgavenModel.GetHuisartsKosten();
                 case 2:
                     return zorguitgavenModel.GetTandartsKosten();
+                case 3:
+                    return zorguitgavenModel.GetZiekenhuisKosten();
+                case 4:
+                    return zorguitgavenModel.GetOndersteunendKosten();
+                case 5:
+                    return zorguitgavenModel.GetTotaalKosten();
             }
             return null;
         }
@@ -57,6 +63,10 @@ namespace ZonderZorgenGit.Controller
                     return zorggebruikModel.GetHuisartsGebruik();
                 case 2:
                     return zorggebruikModel.GetTandartsGebruik();
+                case 3:
+                    return zorggebruikModel.GetZiekenhuisGebruik();
+                case 4:
+                    return zorggebruikModel.GetOndersteunendGebruik();
             }
             return null;
         }
