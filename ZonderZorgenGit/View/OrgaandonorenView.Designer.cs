@@ -90,6 +90,7 @@
             this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.TabIndex = 8;
             this.DatasetsBtn.UseVisualStyleBackColor = true;
+            this.DatasetsBtn.Click += new System.EventHandler(this.DatasetsBtn_Click);
             // 
             // DashboardBtn
             // 

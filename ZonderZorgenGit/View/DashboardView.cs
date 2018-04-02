@@ -43,5 +43,13 @@ namespace ZonderZorgenGit.View
                 Over.ShowDialog(this);
             }
         }
+
+        private void DatasetsBtn_Click(object sender, EventArgs e)
+        {
+            using (Datasets Datasets = new Datasets())
+            {
+                Datasets.ShowDialog(this);
+            }
+        }
     }
 }

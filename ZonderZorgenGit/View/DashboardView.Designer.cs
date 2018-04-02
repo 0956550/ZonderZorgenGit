@@ -70,6 +70,7 @@
             this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
             this.DatasetsBtn.TabIndex = 6;
             this.DatasetsBtn.UseVisualStyleBackColor = true;
+            this.DatasetsBtn.Click += new System.EventHandler(this.DatasetsBtn_Click);
             // 
             // OverBtn
             // 

@@ -39,10 +39,6 @@
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            this.SidePnl = new System.Windows.Forms.Panel();
-            this.DatasetsBtn = new System.Windows.Forms.Button();
-            this.DashboardBtn = new System.Windows.Forms.Button();
-            this.OverBtn = new System.Windows.Forms.Button();
             this.MainPnl = new System.Windows.Forms.Panel();
             this.TotaalBtn = new System.Windows.Forms.Button();
             this.OndersteunendeDienstenBtn = new System.Windows.Forms.Button();
@@ -52,60 +48,15 @@
             this.ZorgkostenLbl = new System.Windows.Forms.Label();
             this.ZorgkostenChrt = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ZorggebruikChrt = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.SidePnl.SuspendLayout();
+            this.SidePnl = new System.Windows.Forms.Panel();
+            this.DatasetsBtn = new System.Windows.Forms.Button();
+            this.DashboardBtn = new System.Windows.Forms.Button();
+            this.OverBtn = new System.Windows.Forms.Button();
             this.MainPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZorgkostenChrt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZorggebruikChrt)).BeginInit();
+            this.SidePnl.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // SidePnl
-            // 
-            this.SidePnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SidePnl.BackgroundImage")));
-            this.SidePnl.Controls.Add(this.DatasetsBtn);
-            this.SidePnl.Controls.Add(this.DashboardBtn);
-            this.SidePnl.Controls.Add(this.OverBtn);
-            this.SidePnl.Location = new System.Drawing.Point(0, 0);
-            this.SidePnl.Name = "SidePnl";
-            this.SidePnl.Size = new System.Drawing.Size(265, 735);
-            this.SidePnl.TabIndex = 0;
-            // 
-            // DatasetsBtn
-            // 
-            this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
-            this.DatasetsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.DatasetsBtn.FlatAppearance.BorderSize = 2;
-            this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DatasetsBtn.Location = new System.Drawing.Point(56, 300);
-            this.DatasetsBtn.Name = "DatasetsBtn";
-            this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
-            this.DatasetsBtn.TabIndex = 8;
-            this.DatasetsBtn.UseVisualStyleBackColor = true;
-            // 
-            // DashboardBtn
-            // 
-            this.DashboardBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.BackgroundImage")));
-            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.DashboardBtn.FlatAppearance.BorderSize = 2;
-            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DashboardBtn.Location = new System.Drawing.Point(56, 188);
-            this.DashboardBtn.Name = "DashboardBtn";
-            this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
-            this.DashboardBtn.TabIndex = 9;
-            this.DashboardBtn.UseVisualStyleBackColor = true;
-            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
-            // 
-            // OverBtn
-            // 
-            this.OverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OverBtn.BackgroundImage")));
-            this.OverBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.OverBtn.FlatAppearance.BorderSize = 2;
-            this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OverBtn.Location = new System.Drawing.Point(56, 244);
-            this.OverBtn.Name = "OverBtn";
-            this.OverBtn.Size = new System.Drawing.Size(150, 50);
-            this.OverBtn.TabIndex = 7;
-            this.OverBtn.UseVisualStyleBackColor = true;
-            this.OverBtn.Click += new System.EventHandler(this.OverBtn_Click);
             // 
             // MainPnl
             // 
@@ -237,6 +188,56 @@
             title2.Text = "Percentage zorggebruik";
             this.ZorggebruikChrt.Titles.Add(title2);
             // 
+            // SidePnl
+            // 
+            this.SidePnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SidePnl.BackgroundImage")));
+            this.SidePnl.Controls.Add(this.DatasetsBtn);
+            this.SidePnl.Controls.Add(this.DashboardBtn);
+            this.SidePnl.Controls.Add(this.OverBtn);
+            this.SidePnl.Location = new System.Drawing.Point(0, 0);
+            this.SidePnl.Name = "SidePnl";
+            this.SidePnl.Size = new System.Drawing.Size(265, 735);
+            this.SidePnl.TabIndex = 0;
+            // 
+            // DatasetsBtn
+            // 
+            this.DatasetsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DatasetsBtn.BackgroundImage")));
+            this.DatasetsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DatasetsBtn.FlatAppearance.BorderSize = 2;
+            this.DatasetsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DatasetsBtn.Location = new System.Drawing.Point(56, 300);
+            this.DatasetsBtn.Name = "DatasetsBtn";
+            this.DatasetsBtn.Size = new System.Drawing.Size(150, 50);
+            this.DatasetsBtn.TabIndex = 8;
+            this.DatasetsBtn.UseVisualStyleBackColor = true;
+            this.DatasetsBtn.Click += new System.EventHandler(this.DatasetsBtn_Click);
+            // 
+            // DashboardBtn
+            // 
+            this.DashboardBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.BackgroundImage")));
+            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.DashboardBtn.FlatAppearance.BorderSize = 2;
+            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DashboardBtn.Location = new System.Drawing.Point(56, 188);
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.Size = new System.Drawing.Size(150, 50);
+            this.DashboardBtn.TabIndex = 9;
+            this.DashboardBtn.UseVisualStyleBackColor = true;
+            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
+            // 
+            // OverBtn
+            // 
+            this.OverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OverBtn.BackgroundImage")));
+            this.OverBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.OverBtn.FlatAppearance.BorderSize = 2;
+            this.OverBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OverBtn.Location = new System.Drawing.Point(56, 244);
+            this.OverBtn.Name = "OverBtn";
+            this.OverBtn.Size = new System.Drawing.Size(150, 50);
+            this.OverBtn.TabIndex = 7;
+            this.OverBtn.UseVisualStyleBackColor = true;
+            this.OverBtn.Click += new System.EventHandler(this.OverBtn_Click);
+            // 
             // ZorgkostenView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -249,11 +250,11 @@
             this.Name = "ZorgkostenView";
             this.Text = "ZonderZorgen";
             this.Load += new System.EventHandler(this.ZorgkostenView_Load);
-            this.SidePnl.ResumeLayout(false);
             this.MainPnl.ResumeLayout(false);
             this.MainPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZorgkostenChrt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZorggebruikChrt)).EndInit();
+            this.SidePnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

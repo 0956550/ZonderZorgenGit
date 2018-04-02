@@ -80,6 +80,12 @@
     <Compile Include="View\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Datasets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Datasets.Designer.cs">
+      <DependentUpon>Datasets.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\OrgaandonorenView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="View\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Datasets.resx">
+      <DependentUpon>Datasets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\OrgaandonorenView.resx">
       <DependentUpon>OrgaandonorenView.cs</DependentUpon>
