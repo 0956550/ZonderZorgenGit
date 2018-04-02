@@ -10,11 +10,11 @@ namespace ZonderZorgenGit.Model
     class ZorgWerkgelegenheidModel
     {
 
-        ConnectionController mainConnection;
+        private ConnectionController mainConnection;
 
         public ZorgWerkgelegenheidModel(ConnectionController connectionControllerP)
         {
-
+            this.mainConnection = connectionControllerP;
         }
     }
 }
