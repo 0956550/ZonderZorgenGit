@@ -102,7 +102,59 @@ namespace ZonderZorgenGit.View
 
         private void button6_Click(object sender, EventArgs e)
         {
+            label3.Text = "Niet westerse allochtoon";
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(5)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(5)[7][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(5)[2][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(5)[3][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(5)[4][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(5)[5][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(5)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Westerse allochtoon";
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(6)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(6)[7][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(6)[2][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(6)[3][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(6)[4][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(6)[5][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(6)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Allochtoon 1e generatie";
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(7)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(7)[7][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(7)[2][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(7)[3][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(7)[4][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(7)[5][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(7)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Allochtoon 2e generatie";
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(8)[1][0]));
+            geregistreerd.Series["Geregistreerd"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(8)[7][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(0).SetValueY(int.Parse(orgaandonorenController.GetData(8)[2][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(1).SetValueY(int.Parse(orgaandonorenController.GetData(8)[3][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(2).SetValueY(int.Parse(orgaandonorenController.GetData(8)[4][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(3).SetValueY(int.Parse(orgaandonorenController.GetData(8)[5][0]));
+            Hoe.Series["Verdeling geregistreerde"].Points.ElementAt(4).SetValueY(int.Parse(orgaandonorenController.GetData(8)[6][0]));
+            geregistreerd.ChartAreas[0].RecalculateAxesScale();
+            Hoe.ChartAreas[0].RecalculateAxesScale();
         }
     }
 }

@@ -210,5 +210,208 @@ namespace ZonderZorgenGit.Model
             }
         }
 
+        //Get Niet westerse allochtoon row out of database
+        public List<string>[] GetNietWesters()
+        {
+            string query = "SELECT * FROM donorregistraties_persoonskenmerken WHERE persoonskenmerken = 'herkomst:_niet-westerse_allochtoon'";
+
+            //Create a list to store the result
+            List<string>[] list = new List<string>[8];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+            list[2] = new List<string>();
+            list[3] = new List<string>();
+            list[4] = new List<string>();
+            list[5] = new List<string>();
+            list[6] = new List<string>();
+            list[7] = new List<string>();
+            //Open connection
+            if (connectionStatus)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, this.mainConnection.GetConnection());
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    list[0].Add(dataReader["bevolking_12_jaar_of_ouder"] + "");
+                    list[1].Add(dataReader["geregistreerd_in_donorregister"] + "");
+                    list[2].Add(dataReader["toestemming_zonder_donatiebeperkingen"] + "");
+                    list[3].Add(dataReader["toestemming_met_donatiebeperkingen"] + "");
+                    list[4].Add(dataReader["geen_toestemming"] + "");
+                    list[5].Add(dataReader["nabestaanden_beslissen"] + "");
+                    list[6].Add(dataReader["aangewezen_persoon_beslist"] + "");
+                    list[7].Add(dataReader["niet_geregistreerd_in_donorregister"] + "");
+
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //return list to be displayed
+                return list;
+            }
+
+
+            else
+            {
+                return list;
+            }
+        }
+
+        //Get Westerse allochtoon row out of database
+        public List<string>[] GetWesters()
+        {
+            string query = "SELECT * FROM donorregistraties_persoonskenmerken WHERE persoonskenmerken = 'herkomst:_westerse_allochtoon'";
+
+            //Create a list to store the result
+            List<string>[] list = new List<string>[8];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+            list[2] = new List<string>();
+            list[3] = new List<string>();
+            list[4] = new List<string>();
+            list[5] = new List<string>();
+            list[6] = new List<string>();
+            list[7] = new List<string>();
+            //Open connection
+            if (connectionStatus)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, this.mainConnection.GetConnection());
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    list[0].Add(dataReader["bevolking_12_jaar_of_ouder"] + "");
+                    list[1].Add(dataReader["geregistreerd_in_donorregister"] + "");
+                    list[2].Add(dataReader["toestemming_zonder_donatiebeperkingen"] + "");
+                    list[3].Add(dataReader["toestemming_met_donatiebeperkingen"] + "");
+                    list[4].Add(dataReader["geen_toestemming"] + "");
+                    list[5].Add(dataReader["nabestaanden_beslissen"] + "");
+                    list[6].Add(dataReader["aangewezen_persoon_beslist"] + "");
+                    list[7].Add(dataReader["niet_geregistreerd_in_donorregister"] + "");
+
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //return list to be displayed
+                return list;
+            }
+
+
+            else
+            {
+                return list;
+            }
+        }
+
+        //Get 1e generatie allochtoon row out of database
+        public List<string>[] GetAllochtoonEersteGen()
+        {
+            string query = "SELECT * FROM donorregistraties_persoonskenmerken WHERE persoonskenmerken = 'herkomst:_allochtoon,_1e_generatie'";
+
+            //Create a list to store the result
+            List<string>[] list = new List<string>[8];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+            list[2] = new List<string>();
+            list[3] = new List<string>();
+            list[4] = new List<string>();
+            list[5] = new List<string>();
+            list[6] = new List<string>();
+            list[7] = new List<string>();
+            //Open connection
+            if (connectionStatus)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, this.mainConnection.GetConnection());
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    list[0].Add(dataReader["bevolking_12_jaar_of_ouder"] + "");
+                    list[1].Add(dataReader["geregistreerd_in_donorregister"] + "");
+                    list[2].Add(dataReader["toestemming_zonder_donatiebeperkingen"] + "");
+                    list[3].Add(dataReader["toestemming_met_donatiebeperkingen"] + "");
+                    list[4].Add(dataReader["geen_toestemming"] + "");
+                    list[5].Add(dataReader["nabestaanden_beslissen"] + "");
+                    list[6].Add(dataReader["aangewezen_persoon_beslist"] + "");
+                    list[7].Add(dataReader["niet_geregistreerd_in_donorregister"] + "");
+
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //return list to be displayed
+                return list;
+            }
+
+
+            else
+            {
+                return list;
+            }
+        }
+        //Get 2e generatie allochtoon row out of database
+        public List<string>[] GetAllochtoonTweedeGen()
+        {
+            string query = "SELECT * FROM donorregistraties_persoonskenmerken WHERE persoonskenmerken = 'herkomst:_allochtoon,_2e_generatie'";
+
+            //Create a list to store the result
+            List<string>[] list = new List<string>[8];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+            list[2] = new List<string>();
+            list[3] = new List<string>();
+            list[4] = new List<string>();
+            list[5] = new List<string>();
+            list[6] = new List<string>();
+            list[7] = new List<string>();
+            //Open connection
+            if (connectionStatus)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, this.mainConnection.GetConnection());
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    list[0].Add(dataReader["bevolking_12_jaar_of_ouder"] + "");
+                    list[1].Add(dataReader["geregistreerd_in_donorregister"] + "");
+                    list[2].Add(dataReader["toestemming_zonder_donatiebeperkingen"] + "");
+                    list[3].Add(dataReader["toestemming_met_donatiebeperkingen"] + "");
+                    list[4].Add(dataReader["geen_toestemming"] + "");
+                    list[5].Add(dataReader["nabestaanden_beslissen"] + "");
+                    list[6].Add(dataReader["aangewezen_persoon_beslist"] + "");
+                    list[7].Add(dataReader["niet_geregistreerd_in_donorregister"] + "");
+
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //return list to be displayed
+                return list;
+            }
+
+
+            else
+            {
+                return list;
+            }
+        }
+
     }
 }
